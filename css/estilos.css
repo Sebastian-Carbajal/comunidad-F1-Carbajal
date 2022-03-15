@@ -341,7 +341,27 @@ aside {
    box-sizing: border-box;
 }	
 
-	
+/* Cambios de estilo para hacer animaciones */	
+
+aside .advertisement h1 {
+		background-color: #EE0000;
+		color: #FFFFFF;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+		.advertisement img {
+			width: 100%;
+		}
+
+				.advertisement img a {
+					text-decoration: none;
+				}
+
+/* Fin de cambios de estilo para animaciones */
+
 /* -- Estilo para pagina gallery -- */
 
 #gallerySection {
@@ -409,7 +429,11 @@ aside {
 	box-sizing: border-box;
 }
 
-
+/* Cambios de estilo para hacer animaciones */
+.box:hover {
+	transform: scale(1.15);
+}
+/* Fin de cambios de estilo para animaciones */
 
 .galleryContainer .box img {
 	/* Box Sizing */
@@ -576,7 +600,23 @@ aside {
 	display: flex;
 }
 
+/* Cambios de estilo para hacer animaciones */
 
+aside .commercial img {
+	width: 85%;
+}
+
+aside .commercial h1 {
+	background-color: #38383F;
+	color: #FFFFFF;
+	background-color: rgba(56, 56, 63, 0.6);
+	text-align: center;
+	text-transform: uppercase;
+	width: 85%;
+	margin: 0;
+}
+
+/* Fin de cambios de estilo para animaciones */
 
 /* -- Estilo para pagina contact -- */
 
@@ -611,10 +651,16 @@ form input {
 
 select.genero {
 	color: #FFFFFF;
-}
+	/* Cambios de estilo para hacer animaciones */
+	background: linear-gradient(to bottom, #38383F, #555555);
+	/* Fin de cambios de estilo para animaciones */
+}	
 
 select.genero:hover {
 	color: #FFFFFF;
+	/* Cambios de estilo para hacer animaciones */	
+	background: linear-gradient(to top, #e73827, #f85032); 
+	/* Fin de cambios de estilo para animaciones */
 }
 
 .genero option {
@@ -632,15 +678,38 @@ fieldset form textarea {
 	display: flex;
 }
 
+/* Cambios de estilo para hacer animaciones */
+.reset {
+	background: linear-gradient(to bottom, rgba(238,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(217,0,0,1) 51%, rgba(0,0,0,1) 100%);
+}
 
+.reset:hover {
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(238,0,0,1) 0%, rgba(255,0,0,1) 25%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 75%, rgba(255,0,0,1) 100%);
+	color: #FFFFFF;
+}
 
+.submit {
+		background: linear-gradient(to bottom, rgba(238,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(217,0,0,1) 51%, rgba(0,0,0,1) 100%);
+}
+.submit:hover {
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(238,0,0,1) 0%, rgba(255,0,0,1) 25%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 75%, rgba(255,0,0,1) 100%);
+	color: #FFFFFF;
+}
+
+/* Fin de cambios de estilo para animaciones */
 
 select#piloto {
 	color: #FFFFFF;
+	/* Cambios de estilo para hacer animaciones */
+	background: linear-gradient(to bottom, #38383F, #555555);
+	/* Fin de cambios de estilo para animaciones */
 }
 
 	select#piloto:hover {
 	color: #FFFFFF;
+	/* Cambios de estilo para hacer animaciones */
+	background: linear-gradient(to top, #e73827, #f85032);
+	/* Fin de cambios de estilo para animaciones */
 	}
 
 #piloto option {
@@ -653,6 +722,10 @@ fieldset legend {
 	background-color: #38383F;
 }
 
+	fieldset legend:hover {
+	/* Transform */
+	transform: scale(1.1);
+	}
 
 	fieldset form label {
 		color: #FFFFFF;
@@ -675,6 +748,43 @@ fieldset h2 {
 }
 
 
+/* Cambios de estilo para hacer animaciones */
+/* Linea de Tiempo para seccion contact */ 
+
+@keyframes advertisementText {
+	
+	from {
+		color: rgba(255, 255, 255, 0.1);
+		text-align: center;
+	}	
+
+	to {
+		color: rgba(255, 255, 255, 1.0);
+		text-align: center;
+	}
+
+}
+
+.linking {
+	width: 100%;
+	background-color: #38383F;
+}
+
+		.linking .linkingPhrase {	
+			color: #FFFFFF;
+			text-transform: uppercase;
+			text-align: center;
+			animation-name: advertisementText;
+			animation-duration: 5s;
+			animation-timing-function: ease;
+			margin: 0;
+		}
+
+.imageAd {
+	width: 100%;
+}
+
+/* Fin de cambios de estilo para animaciones */ 
 
 /* Media Query --> Breakpoint para sección  cast */
 
@@ -724,8 +834,13 @@ fieldset h2 {
   	"main main main aside" "footer footer footer footer" ;
 	}
 
-}
+	/* Publicidades con animaciones */
+	aside .advertisement h1 {
+		font-weight: 500;
+	/* Fin de cambios de estilo para publicidades */
+	}
 
+}
 
 @media (max-width: 820px) {
 	#reportSection {
@@ -741,9 +856,26 @@ fieldset h2 {
 }
 
 /* Media Queries --> Breakpoint para seccion contact */
-
+	/* Media Query usado para animacion de publicidades */
+@media (max-width: 820px) {
+	#aboutUs aside {
+		width: 100%; 
+	}
+}
+/* Fin de Media Query para animacion de publicidades  */	
 
 /* Media Queries --> Breakpoint para sección cast */
+	/* Media Query usado para animacion de publicidades */
+		@media (max-width: 820px) {
+	aside .commercial h1 {
+		width: 100%;
+	}
+
+	aside .commercial img {
+		width: 100%;
+	}
+}
+/* Fin de Media Query para animacion de publicidades  */	
 
 
 /* Media Queries --> Breakpoint para sección gallery */
@@ -822,6 +954,20 @@ fieldset h2 {
 		margin-bottom: 10px;
 	}
 
+	/* Cambios de estilo para hacer animaciones de las publicidades */
+	.commercial {
+		margin: 0 10px;
+	}
+
+	aside .commercial h1 {
+		width: 100%; 
+	}
+
+	aside .commercial img {
+		width: 100%;
+	 /* Fin de cambios de estilo para animaciones de publicidades */ 
+	}	
+
 }
 
 /* Media Query --> Breakpoint para seccion contact */
@@ -834,6 +980,13 @@ fieldset h2 {
 	grid-template-areas: "nav" "main" "aside" "footer";
 	}
 
+	fieldset {
+    width: 90%;
+	}
+
+	.adsSection {
+		width: 60%;
+	}
 }
 
 
@@ -1002,7 +1155,8 @@ fieldset h2 {
 
 	.footerSocial .footerImg {
 	padding-left: 5px;
-
+	/* Transform */
+	transform: translate(0,0) 
 	}
 
 }
