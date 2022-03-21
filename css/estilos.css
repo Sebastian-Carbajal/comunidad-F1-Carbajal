@@ -447,20 +447,13 @@ aside .advertisement h1 {
 #castSection {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 16vh 450vh 70vh 19vh;
+	grid-template-rows: 16vh 530vh 90vh 19vh;
 	grid-template-areas: "nav" "main" "aside" "footer";
 }
 
 .titleWithImage {
+	background-color: rgba(56, 56, 63, 0.8);
 	box-sizing: border-box;
-	margin: 1rem 1.2rem;
-}
-
-.titleWithImage h2 {
-	color: white;
-	background-color: rgba(0, 0, 0, .8);
-	text-align: center;
-	font-size: 1.75rem;
 }
 
 .mediaContent {
@@ -476,15 +469,17 @@ aside .advertisement h1 {
 	border-style: ridge;
 	border-color: #38383F;
 	border-width: 1.5rem 4rem 1.5rem 4rem;
-	/* Box Model */
-	margin-bottom: 1.5rem;
 }
 
 /* Estilos a la tabla hecha con Grid */
 
+.tableItem figure {
+  border: 0.1px #cccccc solid;
+}
 
-.castContainer {
-	display: flex;
+.tableItem figcaption {
+  color: white;
+  font-weight: 400;
 }
 
 .table {
@@ -493,13 +488,11 @@ aside .advertisement h1 {
 }
 
 .rows {
-	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	align-items: center;
+	justify-items: center;
 	grid-gap: 1px;
-	width: 65%;
+	width: 98%;
 	background-color: rgba(56, 56, 63, 1.0);
-	color: white;
 	font-weight: 600;
 	box-sizing: border-box;
 }
@@ -766,8 +759,12 @@ fieldset h2 {
 	#castSection {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 22vh 455vh 70vh 21vh;
+	grid-template-rows: 22vh 495vh 70vh 21vh;
 	grid-template-areas: "nav" "main" "aside" "footer";
+	}
+
+	aside .commercial h1 {
+		font-size: large;
 	}
 }
 
@@ -935,7 +932,7 @@ fieldset h2 {
 
 	#castSection {
 	grid-template-columns: 1fr;
-	grid-template-rows: 22vh 560vh 60vh 21vh;
+	grid-template-rows: 22vh 610vh 60vh 21vh;
 	grid-template-areas: "nav" "main" "aside" "footer";
 	}
 
@@ -950,6 +947,7 @@ fieldset h2 {
 
 	aside .commercial h1 {
 		width: 100%; 
+		font-size: medium;
 	}
 
 	aside .commercial img {
