@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pilotos-Equipos</title>
+
+	<!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	
 	<link rel="stylesheet" href="css/estilos.css">
 
 	<!-- wow js -->
@@ -12,7 +15,9 @@
             <script>
               new WOW().init();
             </script>
-			
+		
+		<title>Pilotos-Equipos</title>
+
 </head>
 <body>
 	<div id="castSection">
@@ -47,37 +52,36 @@
 </header>
 		
 <main>
-		<div class="titleWithImage">
-				<h2>Conoce los pilotos y equipos de la máxima categoría</h2>
+<div class="titleWithImage d-flex justify-content-center align-items-center container-xl w-100 my-4">
+				<h2 class="text-light text-center">Conoce los pilotos y equipos de la máxima categoría</h2>	
 		</div>
 
-	<div class="mediaContent">
-		<iframe width="85%" height="450" src="https://www.youtube.com/embed/SLHLt6iGVyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="mediaContent container-fluid">
+	<iframe width="82.5%" height="500" src="https://www.youtube.com/embed/BBCTsNc_I8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mb-4"></iframe>
 	</div>
 	
-<section class="castContainer">
+<section class="castContainer d-flex">
  <div class="table">
-	<div class="row">
-		<div class="tableHeader">Piloto</div>
-		<div class="tableHeader">Foto de Piloto</div>
-		<div class="tableHeader">Nacionalidad</div>
-		<div class="tableHeader">Equipo</div>
-		<div class="tableHeader">Edad</div>
-		<div class="tableHeader">Número</div>
+	<div class="rows d-grid align-items-center">
+		<div class="tableHeader" class="d-flex justify-content-center">Piloto</div>
+		<div class="tableHeader" class="d-flex justify-content-center">Nacionalidad</div>
+		<div class="tableHeader" class="d-flex justify-content-center">Equipo</div>
+		<div class="tableHeader" class="d-flex justify-content-center">Edad</div>
+		<div class="tableHeader" class="d-flex justify-content-center">Número</div>
 	</div>
 
-	<div class="body">
-		<div class="row">
-		
-			<div class="tableItem">Max Verstappen</div>
-
-			<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Max_Verstappen" target="_blank">
-				<img src="image/mv1.jpg" alt="Foto de Max Verstappen" class="table__photo">
-				</a>
-			</div>
+	<div class="body border-0">
+		<div class="rows d-grid align-items-center">
+			
+				<div class="tableItem">
+					<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Max_Verstappen" target= "_blank"><img src="image/mv1.jpg" alt="Foto de Max Verstappen" class="w-100"></a>
+  							<figcaption class="p-1">Max Verstappen</figcaption>
+					</figure>
+				</div>
 
 			<div class="tableItem">
-				<img src="image/bandera-de-holanda.jpg" alt="Bandera de 	Países Bajos" class="table__flag">
+				<img src="image/bandera-de-holanda.jpg" alt="Bandera de 	Países Bajos" class="table__flag img-fluid">
 			</div>
 
 			<div class="tableItem">Oracle Red Bull Racing</div>
@@ -88,17 +92,17 @@
 	
 			</div>
 
-		<div class="row">
+		<div class="rows d-grid align-items-center ">
 
-			<div class="tableItem">Lewis Hamilton</div>
-		
-			<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Lewis_Hamilton" target="_blank">
-				<img src="image/lh44.jpg" alt="Foto de Lewis Hamilton" class="table__photo">
-				</a>
+			<div class="tableItem">
+					<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Lewis_Hamilton" target= "_blank"><img src="image/lh44.jpg" alt="Foto de Lewis Hamilton" class="w-100"></a>
+  							<figcaption class="p-1">Lewis Hamilton</figcaption>
+					</figure>
 			</div>
 
 			<div class="tableItem">
-				<img src="image/bandera-de-inglaterra.jpg" alt="Bandera de Gran Bretaña" class="table__flag">
+				<img src="image/bandera-de-inglaterra.jpg" alt="Bandera de Gran Bretaña" class="table__flag img-fluid">
 			</div>
 		
 			<div class="tableItem">Mercedes AMG Petronas F1 team</div>
@@ -109,16 +113,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Valtteri Bottas</div>
-			
-			<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Valtteri_Bottas" target="_blank">
-				<img src="image/vb77.jpg" alt="Foto de Valtteri Bottas" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Valtteri_Bottas" target= "_blank"><img src="image/vb77.jpg" alt="Foto de Valtteri Bottas" class="w-100"></a>
+  							<figcaption class="p-1">Valtteri Bottas</figcaption>
+				</figure>
 			</div>
-		
-			<div class="tableItem"><img src="image/bandera-de-finlandia.jpg" alt="Bandera de Finlandia" class="table__flag">
+
+			<div class="tableItem"><img src="image/bandera-de-finlandia.jpg" alt="Bandera de Finlandia" class="table__flag img-fluid">
 			</div>
 		
 			<div class="tableItem">Alfa Romeo Racing</div>
@@ -129,16 +133,16 @@
  	
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center ">
 	   	
-	   	<div class="tableItem">Sergio Pérez</div>
-			
-			<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Sergio_Pérez" target="_blank">
-				<img src="image/sp11.jpg" alt="Foto de Sergio Pérez" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Sergio_Pérez" target= "_blank"><img src="image/sp-11.jpg" alt="Foto de Sergio Pérez" class="w-100"></a>
+  							<figcaption class="p-1">Sergio Pérez</figcaption>
+				</figure>
 			</div>
 			
-			<div class="tableItem"><img src="image/bandera-de-mexico.jpg" alt="Bandera de Mexico" class="table__flag">
+			<div class="tableItem"><img src="image/bandera-de-mexico.jpg" alt="Bandera de Mexico" class="table__flag img-fluid">
 			</div>
 			
 			<div class="tableItem">Oracle Red Bull Racing</div>
@@ -149,17 +153,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center ">
 	   	
-	   	<div class="tableItem">Carlos Sainz</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Calos_Sainz" target="_blank">
-	   		<img src="image/cs55.jpg" alt="Foto de Carlos Sainz" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Carlos_Sainz" target= "_blank"><img src="image/cs55.jpg" alt="Foto de Carlos Sainz" class="w-100"></a>
+  							<figcaption class="p-1">Carlos Sainz</figcaption>
+				</figure>
 			</div>
 	   	
-	   	
-	   	<div class="tableItem"><img src="image/bandera-de-españa.jpg" alt="Bandera de España" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-españa.jpg" alt="Bandera de España" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Scuderia Ferrari</div>
@@ -170,16 +173,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center ">
 	   	
-	   	<div class="tableItem">Lando Norris</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Lando_Norris" target="_blank">
-	   		<img src="image/ln4.jpg" alt="Foto de Lando Norris" class="table__photo">
-	   		</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Lando_Norris" target= "_blank"><img src="image/ln-4.jpg" alt="Foto de Lando Norris" class="w-100"></a>
+  							<figcaption class="p-1">Lando Norris</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-inglaterra.jpg" alt="Bandera de Gran Bretaña" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-inglaterra.jpg" alt="Bandera de Gran Bretaña" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">McLaren F1 team</div>
@@ -190,16 +193,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Charles Leclerc</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Charles_Leclerc" target="_blank">
-	   		<img src="image/cl16.jpg" alt="Foto de Charles Leclerc" class="table__photo">
-	   		</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Charles_Leclerc" target= "_blank"><img src="image/cl16.jpg" alt="Foto de Charles Leclerc" class="w-100"></a>
+  							<figcaption class="p-1">Charles Leclerc</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-monaco.jpg" alt="Bandera de Monaco" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-monaco.jpg" alt="Bandera de Monaco" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Scuderia Ferrari</div>
@@ -210,16 +213,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Daniel Ricciardo</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Daniel_Ricciardo" target="_blank">
-				<img src="image/dr3.jpg" alt="Foto de Daniel Ricciardo" class="table__photo--sm">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Daniel_Ricciardo" target= "blank"><img src="image/dr-3.jpg" alt="Foto de Daniel Ricciardo" class="w-100"></a>
+  							<figcaption class="p-1">Daniel Ricciardo</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-australia.jpg" alt="Bandera de Australia" class="table__flag"></div>
+	   	<div class="tableItem"><img src="image/bandera-de-australia.jpg" alt="Bandera de Australia" class="table__flag img-fluid"></div>
 	   	
 	   	<div class="tableItem">McLaren F1 team</div>
 	   	
@@ -229,16 +232,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Pierre Gasly</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Pierre_Gasly" target="_blank">
-				<img src="image/pg10.jpg" alt="Foto de Pierre Gasly" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Pierre_Gasly" target= "_blank"><img src="image/pg10.jpg" alt="Foto de Pierre Gasly" class="w-100"></a>
+  							<figcaption class="p-1">Pierre Gasly</figcaption>
+				</figure>
 			</div>
-	   	
-	   	<div class="tableItem"><img src="image/bandera-de-francia.jpg" alt="Bandera de Francia" class="table__flag">
+
+	   	<div class="tableItem"><img src="image/bandera-de-francia.jpg" alt="Bandera de Francia" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Scuderia Alpha Tauri</div>
@@ -249,16 +252,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Fernando Alonso</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Fernando_Alonso" target="_blank">
-				<img src="image/fa14.jpg" alt="Foto de Fernando Alonso" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Fernando_Alonso" target= "_blank"><img src="image/fa14.jpg" alt="Foto de Fernando Alonso" class="w-100"></a>
+  							<figcaption class="p-1">Fernando Alonso</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-españa.jpg" alt="Bandera de España" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-españa.jpg" alt="Bandera de España" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Alpine F1 Team</div>
@@ -268,16 +271,16 @@
 	   	<div class="tableItem">14</div>
 	   </div>
    	
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Esteban Ocon</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Esteban_Ocon" target="_blank">
-				<img src="image/eo31.jpg" alt="Foto de Esteban Ocon" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Esteban_Ocon" target= "_blank"><img src="image/eo31.jpg" alt="Foto de Esteban Ocon" class="w-100"></a>
+  							<figcaption class="p-1">Esteban Ocon</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-francia.jpg" alt="Bandera de Francia" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-francia.jpg" alt="Bandera de Francia" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Alpine F1 Team</div>
@@ -289,16 +292,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Sebastian Vettel</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Sebastian_Vettel" target="_blank">
-				<img src="image/sv5.jpg" alt="Foto de Sebastian Vettel" class="table__photo--sm">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Sebastian_Vettel" target= "_blank"><img src="image/sv-5.jpg" alt="Foto de Sebastian Vettel" class="w-100"></a>
+  							<figcaption class="p-1">Sebastian Vettel</figcaption>
+				</figure>
 			</div>
 	   		
-	   	<div class="tableItem"><img src="image/bandera-de-alemania.jpg" alt="Bandera de Alemania" class="table__flag ">
+	   	<div class="tableItem"><img src="image/bandera-de-alemania.jpg" alt="Bandera de Alemania" class="table__flag img-fluid ">
 	   	</div>
 	   	
 	   	<div class="tableItem">Aston Martin Aramco Cognizant F1 Team
@@ -310,16 +313,16 @@
 	   
 	  	</div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Lance Stroll</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Lance_Stroll" target="_blank">
-				<img src="image/ls18.jpg" alt="Foto de Lance Stroll" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Lance_Stroll" target= "_blank"><img src="image/ls18.jpg" alt="Foto de Lance Stroll" class="w-100"></a>
+  							<figcaption class="p-1">Lance Stroll</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-canada.jpg" alt="Bandera de Canadá" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-canada.jpg" alt="Bandera de Canadá" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Aston Martin Aramco Cognizant F1 Team
@@ -331,16 +334,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Yuki Tsunoda</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Yuki_Tsunoda" target="_blank">
-				<img src="image/yt22.jpg" alt="Foto de Yuki Tsunoda" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Yuki_Tsunoda" target= "_blank"><img src="image/yt22.jpg" alt="Foto de Yuki Tsunoda" class="w-100"></a>
+  							<figcaption class="p-1">Yuki Tsuonda</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-japon.jpg" alt="Bandera de Japón" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-japon.jpg" alt="Bandera de Japón" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Scuderia Alpha Tauri</div>
@@ -350,16 +353,16 @@
 	   	<div class="tableItem">22</div>
 	   </div>
 	
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">George Russell</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/George_Russell_(piloto)" target="_blank">
-				<img src="image/gr63.jpg" alt="Foto de George Russell" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/George_Russell_(piloto)" target= "_blank"><img src="image/gr-63.png" alt="Foto de George Russell" class="w-100"></a>
+  							<figcaption class="p-1">George Russell</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-inglaterra.jpg" alt="Bandera de Gran Bretaña" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-inglaterra.jpg" alt="Bandera de Gran Bretaña" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Mercedes AMG Petronas F1 team</div>
@@ -370,17 +373,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Guanyu Zhou</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Guanyu_Zhou" target="_blank">
-				<img src="image/gz24.jpg" alt="Foto de Guanyu Zhou" class="table__photo">
-				</a>
-			
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Guanyu_Zhou" target= "_blank"><img src="image/gz-24.jpg" alt="Foto de Guanyu Zhou" class="w-100"></a>
+  							<figcaption class="p-1">Guanyu Zhou</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-china.jpg" alt="Bandera de China" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-china.jpg" alt="Bandera de China" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Alfa Romeo Racing</div>
@@ -391,16 +393,16 @@
 	   
 	   </div>
    	
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Nicholas Latifi</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Nicholas_Latifi" target="_blank">
-				<img src="image/nl6.jpg" alt="Foto de Nicholas Latifi" width="75" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Nicholas_Latifi" target= "_blank"><img src="image/nl6.jpg" alt="Foto de Nicholas Latifi" class="w-100"></a>
+  							<figcaption class="p-1">Nicholas Latifi</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-canada.jpg" alt="Bandera de Canadá" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-canada.jpg" alt="Bandera de Canadá" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Williams Racing</div>
@@ -411,16 +413,16 @@
 	   
 	   </div>
 
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Alexander Albon</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Alexander_Albon" target="_blank">
-				<img src="image/aa23.jpg" alt="Foto de Alexander Albon" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Alexander_Albon" target= "_blank"><img src="image/aa-23.png" alt="Foto de Alexander Albon" class="w-100"></a>
+  							<figcaption class="p-1">Alexander Albon</figcaption>
+				</figure>
 			</div>
 	   	
-	   	<div class="tableItem"><img src="image/bandera-de-tailandia.jpg" alt="Bandera de Tailandia" class="table__flag">
+	   	<div class="tableItem"><img src="image/bandera-de-tailandia.jpg" alt="Bandera de Tailandia" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Williams Racing</div>
@@ -431,16 +433,16 @@
 	   
 	   </div>
 	   
-	   <div class="row">
+	   <div class="rows d-grid align-items-center">
 	   	
-	   	<div class="tableItem">Mick Schumacher</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Mick_Schumacher" target="_blank">
-				<img src="image/msc.jpg" alt="Foto de Mick Schumacher" class="table__photo">
-				</a>
+	   	<div class="tableItem">
+	   		<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Mick_Schumacher" target= "_blank"><img src="image/ms47.jpg" alt="Foto de Mick Schumacher" class="w-100"></a>
+  							<figcaption class="p-1">Mick Schumacher</figcaption>
+				</figure>
 			</div>
-	   	
-	   	<div class="tableItem"><img src="image/bandera-de-alemania.jpg" alt="Bandera de Alemania" class="table__flag">
+
+	   	<div class="tableItem"><img src="image/bandera-de-alemania.jpg" alt="Bandera de Alemania" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Haas F1 Team</div>
@@ -451,16 +453,16 @@
 	   
 	   </div>
 
-		<div class="row">
+		<div class="rows d-grid align-items-center">
 			
-			<div class="tableItem">Kevin Magnussen</div>
-	   	
-	   	<div class="tableItem"><a href="https://es.wikipedia.org/wiki/Kevin_Magnussen" target="_blank">
-				<img src="image/km20.jpg" alt="Foto de Kevin Magnussen" class="table__photo">
-				</a>
+			<div class="tableItem">
+				<figure class="p-1 m-auto">
+  						<a href= "https://es.wikipedia.org/wiki/Kevin_Magnussen" target= "_blank"><img src="image/km-20.jpg" alt="Foto de Kevin Magnussen" class="w-100"></a>
+  							<figcaption class="p-1">Kevin Magnussen</figcaption>
+				</figure>
 			</div>
-	   	
-	   	<div class="tableItem"><img src="image/bandera-de-dinamarca.jpg" alt="Bandera de Brasil" class="table__flag">
+
+	   	<div class="tableItem"><img src="image/bandera-de-dinamarca.jpg" alt="Bandera de Brasil" class="table__flag img-fluid">
 	   	</div>
 	   	
 	   	<div class="tableItem">Haas F1 Team</div>
@@ -673,5 +675,9 @@
 </footer>		
 	
 	</div>
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+
 </body>
 </html>

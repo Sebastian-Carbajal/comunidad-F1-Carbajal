@@ -501,20 +501,19 @@ aside .advertisement h1 {
    width: 80%;
 }
 
-.row {
+.rows {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	align-items: center;
-  /*justify-content: flex-end;*/
 	grid-gap: 1px;
 	width: 65%;
-	background-color: rgba(56, 56, 63, .7);
+	background-color: rgba(56, 56, 63, 1.0);
 	color: white;
 	font-weight: 600;
 	box-sizing: border-box;
 }
 
-.row .tableHeader {
+.rows .tableHeader {
 	padding: 10px;
 	background-color: #38383F;
 	color: #EE0000;
@@ -523,12 +522,12 @@ aside .advertisement h1 {
 }
 
 
-.body .row {
+.body .rows {
 	padding: 10px;
 	margin: 5px 0;
 }
 
-.body .row .tableItem {
+.body .rows .tableItem {
 	display: flex;
 	justify-content: center;
   /*align-items: center;*/
@@ -539,7 +538,7 @@ aside .advertisement h1 {
 }
 
 .board {
-	width: 50% ;
+	width: 50%;
 }
 
 .line {
@@ -549,7 +548,7 @@ aside .advertisement h1 {
    justify-content: center;
    grid-gap: 1px;
    width: 100%;
-   background-color: rgba(56, 56, 63, .7);
+   background-color: rgba(56, 56, 63, 1.0);
    color: white;
    font-weight: 600;
    box-sizing: border-box;
@@ -577,27 +576,11 @@ aside .advertisement h1 {
    box-sizing: border-box;
 }
 
-
-
 /* Modifica fotos y banderas */
 
 .table__flag {
 	width: 40%;
 	height: auto;
-}
-
-.table__photo--sm {
-	height: 8rem;
-	width: 6rem;
-}
-
-.table__photo {
-	width: 7.5rem;
-	height: auto;
-}
-
-.tableContainer {
-	display: flex;
 }
 
 /* Cambios de estilo para hacer animaciones */
