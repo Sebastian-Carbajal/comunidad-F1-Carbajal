@@ -241,11 +241,9 @@ footer {
 }
 
 .footerTxt--right {
-	/* Text Style */
-	text-align: right;
 	/* Box Model */
 	padding: 0 1.4rem 1.4rem 0;
-	
+	transform: translateY(11px);
 }
 
 .footerSocial .footerImg {
@@ -254,7 +252,7 @@ footer {
 	max-height: 4rem;
 	max-width: 4rem;
 	/* Transform */
-	transform: translate(200px, -48px);
+	transform: translate(222px, -32px);
 }
 
 a.footerPage {
@@ -271,7 +269,7 @@ a.footerPage {
   /* CSS Grid */
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: 16vh 87vh 75vh 22vh;
+  grid-template-rows: 16vh 187vh 75vh 19vh;
   grid-template-areas: "nav nav nav nav" "main main main aside" 
   "main main main aside" "footer footer footer footer" ;
 }
@@ -347,6 +345,7 @@ aside .advertisement h1 {
 		background-color: #EE0000;
 		color: #FFFFFF;
 		text-align: center;
+		font-size: large;
 		text-transform: uppercase;
 		margin: 0;
 		box-sizing: border-box;
@@ -453,16 +452,8 @@ aside .advertisement h1 {
 }
 
 .titleWithImage {
-	background-image: url(../image/f1-drivers.jpg);
-	background-repeat: no-repeat;
 	box-sizing: border-box;
-	width: 100rem;
-	height: 50rem;
 	margin: 1rem 1.2rem;
-	/*display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;*/
 }
 
 .titleWithImage h2 {
@@ -785,7 +776,7 @@ fieldset h2 {
 @media (max-width: 1033px) {
 	#reportSection {
 		grid-template-columns: repeat(4,1fr); 
-		grid-template-rows: 16vh 107vh 95vh 21vh;
+		grid-template-rows: 16vh 107vh 95vh 19vh;
 		grid-template-areas: "nav nav nav nav" "main main main aside" "main main main aside" "footer footer footer footer";
 	}
 }
@@ -803,6 +794,21 @@ fieldset h2 {
 
 }
 
+/* Media Query --> Breakpoint para sección news */
+
+@media (max-width: 992px) {
+	#reportSection {
+		grid-template-columns: repeat(4,1fr); 
+		grid-template-rows: 16vh 227vh 215vh 19vh;
+		grid-template-areas: "nav nav nav nav" "main main main aside" "main main main aside" "footer footer footer footer";
+	}
+
+	aside .advertisement h1 {
+		font-size: medium;
+	}
+}
+
+
 /* Media Queries --> Breakpoints para seccion news */
 
 @media (max-width: 850px) {
@@ -812,7 +818,7 @@ fieldset h2 {
   	/* CSS Grid */
   	display: grid;
   	grid-template-columns: repeat(4,1fr);
-  	grid-template-rows: 16vh 105vh 97vh 20vh;
+  	grid-template-rows: 16vh 205vh 177vh 19vh;
   	grid-template-areas: "nav nav nav nav" "main main main aside" 
   	"main main main aside" "footer footer footer footer" ;
 	}
@@ -828,7 +834,7 @@ fieldset h2 {
 @media (max-width: 820px) {
 	#reportSection {
 		grid-template-columns: 1fr ;
-		grid-template-rows: 16vh 167vh 95vh 22vh;
+		grid-template-rows: 16vh 477vh 95vh 19vh;
 		grid-template-areas: "nav" "main" "aside" "footer";
 	}
 	
@@ -910,7 +916,7 @@ fieldset h2 {
 
 	#reportSection {
 		grid-template-columns: 1fr ;
-		grid-template-rows: 16vh 377vh 80vh 22vh;
+		grid-template-rows: 16vh 427vh 80vh 17vh;
 		grid-template-areas: "nav" "main" "aside" "footer";
 	}
 
@@ -1032,7 +1038,7 @@ fieldset h2 {
   	/* CSS Grid */
   	display: grid;
   	grid-template-columns: 1fr;
-  	grid-template-rows: 18vh 100vh 250vh 70vh 22vh;
+  	grid-template-rows: 18vh 110vh 250vh 70vh 17vh;
   	grid-template-areas: "nav" "main" "main" "aside" "footer" ;
 	}
 }
@@ -1101,9 +1107,6 @@ fieldset h2 {
 		width: 65%;
 		margin-top: 16px;
 	}
-
-
-
 }
 
 @media (max-width: 350px) {
