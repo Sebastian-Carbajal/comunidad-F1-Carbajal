@@ -269,7 +269,7 @@ a.footerPage {
   /* CSS Grid */
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: 16vh 187vh 75vh 19vh;
+  grid-template-rows: 16vh 207vh 75vh 19vh;
   grid-template-areas: "nav nav nav nav" "main main main aside" 
   "main main main aside" "footer footer footer footer" ;
 }
@@ -776,7 +776,7 @@ fieldset h2 {
 @media (max-width: 1033px) {
 	#reportSection {
 		grid-template-columns: repeat(4,1fr); 
-		grid-template-rows: 16vh 107vh 95vh 19vh;
+		grid-template-rows: 16vh 147vh 95vh 19vh;
 		grid-template-areas: "nav nav nav nav" "main main main aside" "main main main aside" "footer footer footer footer";
 	}
 }
@@ -799,7 +799,7 @@ fieldset h2 {
 @media (max-width: 992px) {
 	#reportSection {
 		grid-template-columns: repeat(4,1fr); 
-		grid-template-rows: 16vh 227vh 215vh 19vh;
+		grid-template-rows: 16vh 237vh 215vh 19vh;
 		grid-template-areas: "nav nav nav nav" "main main main aside" "main main main aside" "footer footer footer footer";
 	}
 
@@ -818,7 +818,7 @@ fieldset h2 {
   	/* CSS Grid */
   	display: grid;
   	grid-template-columns: repeat(4,1fr);
-  	grid-template-rows: 16vh 205vh 177vh 19vh;
+  	grid-template-rows: 16vh 235vh 177vh 19vh;
   	grid-template-areas: "nav nav nav nav" "main main main aside" 
   	"main main main aside" "footer footer footer footer" ;
 	}
@@ -834,7 +834,7 @@ fieldset h2 {
 @media (max-width: 820px) {
 	#reportSection {
 		grid-template-columns: 1fr ;
-		grid-template-rows: 16vh 477vh 95vh 19vh;
+		grid-template-rows: 16vh 487vh 95vh 19vh;
 		grid-template-areas: "nav" "main" "aside" "footer";
 	}
 	
@@ -916,7 +916,7 @@ fieldset h2 {
 
 	#reportSection {
 		grid-template-columns: 1fr ;
-		grid-template-rows: 16vh 427vh 80vh 17vh;
+		grid-template-rows: 16vh 447vh 80vh 17vh;
 		grid-template-areas: "nav" "main" "aside" "footer";
 	}
 
@@ -1038,7 +1038,7 @@ fieldset h2 {
   	/* CSS Grid */
   	display: grid;
   	grid-template-columns: 1fr;
-  	grid-template-rows: 18vh 110vh 250vh 70vh 17vh;
+  	grid-template-rows: 18vh 110vh 270vh 70vh 17vh;
   	grid-template-areas: "nav" "main" "main" "aside" "footer" ;
 	}
 }
