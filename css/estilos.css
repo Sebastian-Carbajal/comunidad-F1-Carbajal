@@ -22,14 +22,14 @@ html {
 	grid-area: nav;
 }
 
-.menu nav {
+.menu .navbar {
 	/* Flexbox */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-	.menu nav ul {
+	.menu .navbar .navbar-nav {
 		/* List Sytle */
 		list-style: none;
 		/* Box Model */
@@ -42,18 +42,18 @@ html {
 		flex-wrap: wrap;				
 		}
 
-				.menu nav ul li {
+				.menu .navbar .navbar-nav .nav-item {
 					/* Box Model */
 					margin: 0.8rem;
 				}
 
-								.menu nav ul li .link {
+								.menu .navbar .navbar-nav .nav-item .link {
 									/* Text Style*/
 									text-decoration: none;
 									font-size: 1.35rem;
  					             	/* Color */
              					 	color: #EE0000;
-             					 	/* Box Model */
+             				 	/* Box Model */
              				 	   margin-top: 1rem;
 								}
 
@@ -66,7 +66,7 @@ a.link:hover {
 
 .logo {
 	/* Box Model */
-	width: 28%; 
+	width: 20%; 
 	height: auto;
 	margin-right: 1rem; 
 }
@@ -82,7 +82,7 @@ body {
 	/* CSS Grid */
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 14vh 95vh 21vh ;
+	grid-template-rows: 17vh 245vh 19vh ;
 	grid-template-areas: "nav" "main" "footer";
 }
 
@@ -91,51 +91,10 @@ main {
 	grid-area: main;
 }
 
-.containerCarousel {
-	/* Flexbox */
-	display: flex;
-}
-
-.containerSlider {
-	/* Flexbox */
-	display: flex;
-	/* List Style */
-	list-style-type: none;	
-}
-
 .containerImage {
 	/* Box Model */
 	width: 100%;
-	height: auto;
 }
-
-
-.containerMenu {
-	/* List Style */
-    list-style: none;
-	/* Flexbox */
-	display: flex;
-	justify-content: flex-end;
-}
-
-.containerMenu li {
-	/*Box Model*/
-	margin: 0.5rem;
-	/*Flexbox*/
-	display: flex;
-	align-items: flex-end;
-	/* Position */
-	position: relative;
-	right: 50rem;
-	top: 1.5rem;
-}
-
-				.containerMenu li a {
-					/* Text Style */
-					text-decoration: none;
-					/* Display */
-					display: none;
-				}
 
 .communityPpt {
 	/* Flexbox */
@@ -153,7 +112,7 @@ main {
 	font-weight: 700;
 	text-align: center;
 	/* Background & Color */
-	background-color: #555555;
+	background: linear-gradient(to top, #555555, #000000);
 	color: #FFFFFF;
 	/* Box Model */
 	margin: 3% 3%;
@@ -174,14 +133,18 @@ main {
 .scheduleTitle	{
 	/* Text Style */
 	text-align: center;
+	background: linear-gradient(to top, #555555, #000000);
+	color: #FFFFFF;
 }
 
 .schedule {
 	/* Text Style */
 	text-align: center;
 	/* Box Model */
-	width: 45%;
+	width: 100%;
 	margin-top: 30px;
+	display: flex;
+	justify-content: center;
 }
 
 ol {
@@ -199,6 +162,21 @@ ol {
 	grid-column-start: 5;
 }
 
+.first-day {
+	grid-column-start: 7;
+}
+
+.dayOne {
+	grid-column-start: 3;
+}
+
+.raceDate {
+	background-color: #EE0000;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
 .dayName {
 	/* Background & Color */
 	background-color: #555555;
@@ -212,6 +190,7 @@ li {
 	/* Text Style */
 	text-align: right;
 }
+
 
 footer {
 	 /* Background */
@@ -259,7 +238,6 @@ a.footerPage {
 	  /* Text Style */
 	text-decoration: none;
 }
-
 
 /* -- Estilo para página news -- */
 
@@ -452,7 +430,8 @@ aside .advertisement h1 {
 }
 
 .titleWithImage {
-	background-color: rgba(56, 56, 63, 0.8);
+	background: linear-gradient(to top, #555555, #000000);
+	color: white;
 	box-sizing: border-box;
 }
 
@@ -768,6 +747,16 @@ fieldset h2 {
 	}
 }
 
+/* Media Query --> Breakpoint para sección index */
+
+@media (max-width: 1033px) {
+	.schedule {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 /* Media Query --> Breakpoint para sección news */
 
 @media (max-width: 1033px) {
@@ -887,7 +876,7 @@ fieldset h2 {
 	#indexSection {
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 17vh 100vh 23vh ;
+	grid-template-rows: 17vh 230vh 17vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
     
@@ -1152,12 +1141,16 @@ fieldset h2 {
 	#indexSection {
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 17vh 90vh 23vh ;
+	grid-template-rows: 17vh 220vh 16vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
 
     .scheduleTitle{
     	font-weight: 500;
+    }
+
+    .month {
+    	margin-right: 20px;
     }
 }
 
@@ -1166,7 +1159,7 @@ fieldset h2 {
 	#indexSection {
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 17vh 90vh 23vh ;
+	grid-template-rows: 16vh 220vh 23vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
 }
@@ -1176,7 +1169,7 @@ fieldset h2 {
 	#indexSection {
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 17vh 100vh 23vh ;
+	grid-template-rows: 17vh 22vh 16vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
 
