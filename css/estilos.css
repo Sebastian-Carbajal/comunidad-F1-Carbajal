@@ -1,4 +1,4 @@
-	@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
 
 html {
 	font-size: 62.5%;
@@ -34,7 +34,7 @@ html {
 		list-style: none;
 		/* Box Model */
 		margin: 0.5 auto;
-   		height: 3rem;
+   	height: 3rem;
 		margin-right: 2rem;
 		/* Flexbox */
 		display: flex;
@@ -53,7 +53,7 @@ html {
 									font-size: 1.35rem;
  					             	/* Color */
              					 	color: #EE0000;
-             				 	/* Box Model */
+             				 		/*Box Model */
              				 	   margin-top: 1rem;
 								}
 
@@ -75,20 +75,23 @@ body {
 	/* Background & Image */
 	background-image: url(../image/fondo-white.jpg);
 	background-repeat: repeat-y;
+	/* Correción que debo tener en cuenta en el futuro */
+	height: 100%;
 }
-
 
 #indexSection {
 	/* CSS Grid */
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 17vh 245vh 19vh ;
+	grid-template-rows: 25vh 50vh 25vh ;
 	grid-template-areas: "nav" "main" "footer";
 }
 
 main {
 	/* CSS Grid */
 	grid-area: main;
+	/*Corrección que debo tener en cuenta en el futuro*/
+	height: 10%;
 }
 
 .containerImage {
@@ -252,51 +255,11 @@ a.footerPage {
   "main main main aside" "footer footer footer footer" ;
 }
 
-.newsCarousel {
-	/* Flexbox */
-	display: flex;
-}
-
-.newsSlider {
-	/* Flexbox */
-	display: flex;
-	list-style-type: none;
-}
-
 .newsItem img {
 	/* Box Model */
 	width: 100%;
 	height: auto;
 }
-
-
-.containerMenuNews {
-	/* List Style */
-    list-style: none;
-	/* Flexbox */
-	display: flex;
-	justify-content: flex-end;
-}
-
-	.containerMenuNews li {
-		/*Box Model*/
-		margin: 0.5rem;
-		/*Flexbox*/
-		display: flex;
-		align-items: flex-end;
-		/* Position */
-		position: relative;
-		right: 50rem;
-		top: 1.5rem;
-	}
-
-					.containerMenuNews li a {
-						/* Text Style */
-						text-decoration: none;
-						/* Display */
-						display: none;
-					}
-
 
 .newsArticle {
 	/* Flexbox */
@@ -354,12 +317,10 @@ aside .advertisement h1 {
 	font-family: sans-serif;
 	font-size: 2.20rem;
 	font-weight: 700;
-	text-align: center;
 	/* Background & Color */
-	background-color: #555555;
+	background: linear-gradient(to top, #555555, #000000);
 	color: #FFFFFF;
 	/* Box Model */
-	margin: 0.5em auto;
 }
 
 .gallerySubtitle {
@@ -368,8 +329,8 @@ aside .advertisement h1 {
 	font-weight: 700;
 	text-align: center;
 	/* Background & Color */
+	background: linear-gradient(to top, #555555, #000000);
 	color: #FFFFFF;
-	background-color: #555555;
 	
 }
 
@@ -386,7 +347,6 @@ aside .advertisement h1 {
    grid-template-columns: repeat(4, 5fr);
    grid-template-rows: repeat(4, 5fr);
    justify-items: center;
-/* align-items: center; */
    /* Box Model */
    width: 90%;
    margin: 1.5em auto;
@@ -693,6 +653,11 @@ fieldset h2 {
 	color: #FFFFFF;
 }
 
+.legendsQuiz {
+	display: flex;
+	justify-content: space-evenly;
+}
+
 
 /* Cambios de estilo para hacer animaciones */
 /* Linea de Tiempo para seccion contact */ 
@@ -778,6 +743,16 @@ fieldset h2 {
 	grid-template-areas: "nav" "main" "footer";
 	} 
 
+}
+
+/* Media Query --> Breakpoint para seccion contact */
+
+@media (max-width: 1000px) {
+	.legendsQuiz {
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+	}
 }
 
 /* Media Query --> Breakpoint para sección news */
@@ -1141,7 +1116,7 @@ fieldset h2 {
 	#indexSection {
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 21vh 220vh 16vh ;
+	grid-template-rows: 17vh 220vh 16vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
 
@@ -1159,7 +1134,7 @@ fieldset h2 {
 	#indexSection {
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 21vh 220vh 23vh ;
+	grid-template-rows: 16vh 220vh 23vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
 }
@@ -1210,5 +1185,4 @@ fieldset h2 {
 
 /* -- } -- */
 
-/* Media Queries --> Breakpoints para  contact */
 
