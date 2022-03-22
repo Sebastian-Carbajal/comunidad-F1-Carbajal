@@ -1141,7 +1141,7 @@ fieldset h2 {
 	#indexSection {
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 17vh 220vh 16vh ;
+	grid-template-rows: 21vh 220vh 16vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
 
@@ -1159,7 +1159,7 @@ fieldset h2 {
 	#indexSection {
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 16vh 220vh 23vh ;
+	grid-template-rows: 21vh 220vh 23vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
 }
@@ -1169,7 +1169,7 @@ fieldset h2 {
 	#indexSection {
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-rows: 17vh 22vh 16vh ;
+	grid-template-rows: 21vh 235vh 16vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
 
