@@ -759,7 +759,7 @@ fieldset h2 {
 	#castSection {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 22vh 495vh 70vh 21vh;
+	grid-template-rows: 22vh 495vh 70vh 19vh;
 	grid-template-areas: "nav" "main" "aside" "footer";
 	}
 
@@ -932,7 +932,7 @@ fieldset h2 {
 
 	#castSection {
 	grid-template-columns: 1fr;
-	grid-template-rows: 22vh 610vh 60vh 21vh;
+	grid-template-rows: 22vh 610vh 60vh 17vh;
 	grid-template-areas: "nav" "main" "aside" "footer";
 	}
 
