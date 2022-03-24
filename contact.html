@@ -1,25 +1,25 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	
+    	<!-- Bootstrap CSS -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	
-	<link rel="stylesheet" href="css/estilos.css">
+    	<link rel="stylesheet" href="css/estilos.css">
 
-	<!-- wow js -->
-<link rel="stylesheet" href="css/animate.css">
-   <script src="js/wow.min.js"></script>
-            <script>
-              new WOW().init();
-            </script>
-		
-		<title>Contacto</title>
+    	<!-- wow js -->
+    <link rel="stylesheet" href="css/animate.css">
+       <script src="js/wow.min.js"></script>
+                <script>
+                  new WOW().init();
+                </script>
+    		<title>Contacto</title>
+  </head>
 
-</head>
 <body>
+	<!-- Div del contact útil para Media Queries -->
 <div id="aboutUs">
  
    <!-- fila de logo + nav --> 
@@ -68,146 +68,158 @@
 	<fieldset>
 		<legend class=" ps-3 fw-bold">Datos del contacto</legend>
 
-<form method="post">
-  <div class="mb-3">
-    <label for="nombre" class="form-label mx-3">Nombre</label>
-    <input type="text" class="form-control" id="nombre" placeholder="Inserte Nombre" aria-describedby="namehelp">
-  </div> 
+			<form method="post">
+			  
+			  <div class="mb-3">
+			    <label for="nombre" class="form-label mx-3">Nombre</label>
+			    <input type="text" class="form-control" id="nombre" placeholder="Inserte Nombre" aria-describedby="namehelp">
+			  </div> 
 
-  <div class="mb-3">
-    <label for="apellido" class="form-label mx-3">Apellido</label>
-    <input type="text" class="form-control" id="apellido" placeholder="Inserte Apellido" aria-describedby="surnameHelp">
-  </div> 
+			  <div class="mb-3">
+			    <label for="apellido" class="form-label mx-3">Apellido</label>
+			    <input type="text" class="form-control" id="apellido" placeholder="Inserte Apellido" aria-describedby="surnameHelp">
+			  </div> 
 
-  <div class="mb-3 d-flex align-items-center">
-    <label for="exampleInputEmail1" class="form-label mx-3">Email</label>
-    <input type="text" class="form-control" id="email" placeholder="username@gmail.com" aria-describedby="emailHelp">
-  </div>
+			  <div class="mb-3 d-flex align-items-center">
+			    <label for="exampleInputEmail1" class="form-label mx-3">Email</label>
+			    <input type="text" class="form-control" id="email" placeholder="username@gmail.com" aria-describedby="emailHelp">
+			  </div>
 
-  <label class="mx-3 p-2">Género:</label>
-		<select name="genero" class="genero mx-3 p-2">
-			<option value="N">--</option>
-			<option value="F">Femenino</option>
-			<option value="M">Masculino</option>
-		</select>
+			  <label class="mx-3 p-2">Género:</label>
+				<select name="genero" class="genero mx-3 p-2">
+					<option value="N">--</option>
+					<option value="F">Femenino</option>
+					<option value="M">Masculino</option>
+				</select>
 
-  <div class="my-2 form-check d-flex align-items-center p-3">
-    <input type="checkbox" class="form-check-input mx-3" id="exampleCheck1">
-    <label class="form-check-label fw-bold" for="checkbox">Aceptar que no es un robot</label>
-  </div>
-  <div class="buttons d-flex">
-  <button type="submit" class="btn submit mx-2 my-3">Enviar todo</button>
-  <button type="reset" class="btn reset mx-2 my-3">Limpiar todo</button>
-	</div>
-</form>
-
-</fieldset>
-
-<fieldset>
-	
-	<legend class="ps-3 fw-bold">Una encuesta para conocerte mas</legend>
-
-<form>
-	
-	<h2><label for="radio" class="f1-quiz mb-4 ms-4">Cuál es tu equipo favorito?</label></h2>
-	
-	<section class="d-flex flex-column">
-	
-			<div class= "ms-4">Mercedes</div>
-			<input type="radio" name="Equipo" value="Mercedes" class="ms-4"/>
-
-			<div class= "ms-4">Red Bull</div>
-			<input type="radio" name="Equipo" value="Red Bull" class="ms-4"/>
-
-			<div class= "ms-4">Ferrari</div>
-			<input type="radio" name="Equipo" value="Ferrari" class="ms-4"/>
-
-			<div class= "ms-4">McLaren</div>
-			<input type="radio" name="Equipo" value="McLaren" class="ms-4"/>
-
-			<div class= "ms-4">Alpine</div>
-			<input type="radio" name="Equipo" value="Alpine" class="ms-4"/>
-
-			<div class= "ms-4">Alpha Tauri</div>
-			<input type="radio" name="Equipo" value="Alpha Tauri" class="ms-4"/>
-
-			<div class= "ms-4">Aston Martin</div>
-			<input type="radio" name="Equipo" value="Aston Martin" class="ms-4"/>
-
-			<div class= "ms-4">Williams</div>
-			<input type="radio" name="Equipo" value="Williams" class="ms-4"/>
-
-			<div class= "ms-4">Alfa Romeo</div>
-			<input type="radio" name="Equipo" value="Alfa Romeo" class="ms-4"/>
-
-			<div class= "ms-4">Haas</div>
-			<input type="radio" name="Equipo" value="Haas" class="ms-4"/>
-	
-	</section>
-
-</form>
-	
-	<h2 class="mb-4 ms-4">A qué piloto apoyás esta temporada?</h2>
-
-		<form method="post">
+			  <div class="my-2 form-check d-flex align-items-center p-3">
+			    <input type="checkbox" class="form-check-input mx-3" id="exampleCheck1">
+			    <label class="form-check-label fw-bold" for="checkbox">Aceptar que no es un robot</label>
+			  </div>
+			  
+			  <div class="buttons d-flex">
+				  <button type="submit" class="btn submit mx-2 my-3">Enviar todo</button>
+				  <button type="reset" class="btn reset mx-2 my-3">Limpiar todo</button>
+			  </div>
 			
-			<select name="Piloto" id="piloto" class="ms-4">
-				<option value="a">---</option>
-				<option value="MV1">Max Verstappen</option>
-				<option value="LH44">Lewis Hamilton</option>
-				<option value="VB77">Valtteri Bottas</option>
-				<option value="SP11">Sergio Pérez</option>
-				<option value="CS55">Carlos Sainz</option>
-				<option value="LN4">Lando Norris</option>
-				<option value="CL16">Charles Leclerc</option>
-				<option value="DR3">Daniel Ricciardo</option>
-				<option value="PG10">Pierre Gasly</option>
-				<option value="FA14">Fernando Alonso</option>
-				<option value="EO31">Esteban Ocon</option>
-				<option value="SV5">Sebastian Vettel</option>
-				<option value="LS18">Lance Stroll</option>
-				<option value="YT22">Yuki Tsunoda</option>
-				<option value="GR63">George Russell</option>
-				<option value="GZ24">Guanyu Zhou</option>
-				<option value="NL6">Nicholas Latifi</option>
-				<option value="AA23">Alexander Albon</option>
-				<option value="MS47">Mick Schumacher</option>
-				<option value="PF51">Pietro Fittipaldi</option>
-			</select>
+			</form>
 
-		</form>
+	</fieldset>
 
-<h2 class="my-4 ms-4">Quién crees que es el mejor piloto de todos los tiempos</h2>
-	<div class="legendsQuiz">
-		<input type="radio" name="Leyenda" value="Michael Schumacher" class="ms-3 mb-2" />
-			<label class="ms-3">Michael Schumacher</label>
-		<input type="radio" name="Leyenda" value="Lewis Hamilton" class="ms-3 mb-2" />
-			<label class="ms-3">Lewis Hamilton</label>
-		<input type="radio" name="Leyenda" value="Sebastian Vettel" class="ms-3 mb-2" />
-			<label class="ms-3">Sebastian Vettel</label>
-		<input type="radio" name="Leyenda" value="Fernando Alonso" class="ms-3 mb-2" />
-			<label class="ms-3">Fernando Alonso</label>
-		<input type="radio" name="Leyenda" value="Juan Manuel Fangio" class="ms-3 mb-2" />
-			<label class="ms-3">Juan Manuel Fangio</label>
-		<input type="radio" name="Leyenda" value="Alain Prost" class="ms-3 mb-2" />
-			<label class="ms-3">Alain Prost</label>
-    	<input type="radio" name="Leyenda" value="Ayrton Senna" class="ms-3 mb-2" />
-			<label class="ms-3">Ayrton Senna</label>
-	</div>
 
-</fieldset>
+	<fieldset>
+		<legend class="ps-3 fw-bold">Una encuesta para conocerte mas</legend>
+
+			<form>
+				
+			<h2><label for="radio" class="f1-quiz mb-4 ms-4">Cuál es tu equipo favorito?</label></h2>
+				
+				<section class="d-flex flex-column">
+				
+					<div class= "ms-4">Mercedes</div>
+					<input type="radio" name="Equipo" value="Mercedes" class="ms-4"/>
+
+					<div class= "ms-4">Red Bull</div>
+					<input type="radio" name="Equipo" value="Red Bull" class="ms-4"/>
+
+					<div class= "ms-4">Ferrari</div>
+					<input type="radio" name="Equipo" value="Ferrari" class="ms-4"/>
+
+					<div class= "ms-4">McLaren</div>
+					<input type="radio" name="Equipo" value="McLaren" class="ms-4"/>
+
+					<div class= "ms-4">Alpine</div>
+					<input type="radio" name="Equipo" value="Alpine" class="ms-4"/>
+
+					<div class= "ms-4">Alpha Tauri</div>
+					<input type="radio" name="Equipo" value="Alpha Tauri" class="ms-4"/>
+
+					<div class= "ms-4">Aston Martin</div>
+					<input type="radio" name="Equipo" value="Aston Martin" class="ms-4"/>
+
+					<div class= "ms-4">Williams</div>
+					<input type="radio" name="Equipo" value="Williams" class="ms-4"/>
+
+					<div class= "ms-4">Alfa Romeo</div>
+					<input type="radio" name="Equipo" value="Alfa Romeo" class="ms-4"/>
+
+					<div class= "ms-4">Haas</div>
+					<input type="radio" name="Equipo" value="Haas" class="ms-4"/>
+				
+				</section>
+
+			</form>
+
 	
-	</form>
-  
+		<h2 class="mb-4 ms-4">A qué piloto apoyás esta temporada?</h2>
+
+			<form method="post">
+			
+				<select name="Piloto" id="piloto" class="ms-4">
+					<option value="none">---</option>
+					<option value="MV1">Max Verstappen</option>
+					<option value="LH44">Lewis Hamilton</option>
+					<option value="VB77">Valtteri Bottas</option>
+					<option value="SP11">Sergio Pérez</option>
+					<option value="CS55">Carlos Sainz</option>
+					<option value="LN4">Lando Norris</option>
+					<option value="CL16">Charles Leclerc</option>
+					<option value="DR3">Daniel Ricciardo</option>
+					<option value="PG10">Pierre Gasly</option>
+					<option value="FA14">Fernando Alonso</option>
+					<option value="EO31">Esteban Ocon</option>
+					<option value="SV5">Sebastian Vettel</option>
+					<option value="LS18">Lance Stroll</option>
+					<option value="YT22">Yuki Tsunoda</option>
+					<option value="GR63">George Russell</option>
+					<option value="GZ24">Guanyu Zhou</option>
+					<option value="NL6">Nicholas Latifi</option>
+					<option value="AA23">Alexander Albon</option>
+					<option value="MS47">Mick Schumacher</option>
+					<option value="PF51">Pietro Fittipaldi</option>
+				</select>
+
+			</form>
+
+		
+		<h2 class="my-4 ms-4">Quién crees que es el mejor piloto de todos los tiempos</h2>
+			
+			<div class="legendsQuiz">
+				
+				<input type="radio" name="Leyenda" value="Michael Schumacher" class="ms-3 mb-2"/>
+					<label class="ms-3">Michael Schumacher</label>
+				
+				<input type="radio" name="Leyenda" value="Lewis Hamilton" class="ms-3 mb-2"/>
+					<label class="ms-3">Lewis Hamilton</label>
+				
+				<input type="radio" name="Leyenda" value="Sebastian Vettel" class="ms-3 mb-2"/>
+					<label class="ms-3">Sebastian Vettel</label>
+				
+				<input type="radio" name="Leyenda" value="Fernando Alonso" class="ms-3 mb-2"/>
+					<label class="ms-3">Fernando Alonso</label>
+				
+				<input type="radio" name="Leyenda" value="Juan Manuel Fangio" class="ms-3 mb-2"/>
+					<label class="ms-3">Juan Manuel Fangio</label>
+				
+				<input type="radio" name="Leyenda" value="Alain Prost" class="ms-3 mb-2"/>
+					<label class="ms-3">Alain Prost</label>
+		    	
+		    	<input type="radio" name="Leyenda" value="Ayrton Senna" class="ms-3 mb-2"/>
+					<label class="ms-3">Ayrton Senna</label>
+			
+			</div>
+
+	</fieldset>
   </div>
 
 </main>
 
 <aside>
+	
 	<figure class="adsSection">
 		<figcaption class="linking"><p class="linkingPhrase">Click aqui<p></figcaption>
 			<a href="https://aulacm.com/curso-de-community-manager-en-madrid" class="pageAd">
-			<img src="https://aulacm.com/wp-content/uploads/2014/11/curso-community.svg" class="imageAd"/>		
+				<img src="https://aulacm.com/wp-content/uploads/2014/11/curso-community.svg" class="imageAd"/>		
 			</a>
 	</figure>
 
