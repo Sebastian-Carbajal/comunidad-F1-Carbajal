@@ -303,7 +303,7 @@ aside .advertisement h1 {
 	/* CSS Grid */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 15vh 142vh 23vh;
+	grid-template-rows: 17vh 142vh 23vh;
 	grid-template-areas: "nav nav" "main main" "footer footer";
 }
 
@@ -519,7 +519,7 @@ aside .commercial h1 {
 #aboutUs {
 	display: grid;
 	grid-template-columns: 2fr 0.5fr;
-	grid-template-rows: 16vh 171vh 23vh;
+	grid-template-rows: 22vh 171vh 23vh;
 	grid-template-areas: "nav nav" "main aside" "footer footer";
 }
 
@@ -701,7 +701,7 @@ fieldset h2 {
 	#castSection {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 22vh 495vh 70vh 19vh;
+	grid-template-rows: 23vh 495vh 70vh 19vh;
 	grid-template-areas: "nav" "main" "aside" "footer";
 	}
 
@@ -737,7 +737,7 @@ fieldset h2 {
 
 	#gallerySection {
 	grid-template-columns: 1fr;
-	grid-template-rows: 16vh 122vh 22vh;
+	grid-template-rows: 22vh 122vh 22vh;
 	grid-template-areas: "nav" "main" "footer";
 	} 
 }
@@ -757,7 +757,7 @@ fieldset h2 {
 @media (max-width: 992px) {
 	#reportSection {
 		grid-template-columns: repeat(4,1fr); 
-		grid-template-rows: 16vh 237vh 215vh 19vh;
+		grid-template-rows: 23vh 237vh 215vh 19vh;
 		grid-template-areas: "nav nav nav nav" "main main main aside" "main main main aside" "footer footer footer footer";
 	}
 
@@ -782,7 +782,7 @@ fieldset h2 {
   	/* CSS Grid */
   	display: grid;
   	grid-template-columns: repeat(4,1fr);
-  	grid-template-rows: 16vh 235vh 177vh 19vh;
+  	grid-template-rows: 23vh 235vh 177vh 19vh;
   	grid-template-areas: "nav nav nav nav" "main main main aside" 
   	"main main main aside" "footer footer footer footer" ;
 	}
@@ -797,7 +797,7 @@ fieldset h2 {
 @media (max-width: 820px) {
 	#reportSection {
 		grid-template-columns: 1fr ;
-		grid-template-rows: 16vh 487vh 95vh 19vh;
+		grid-template-rows: 23vh 487vh 95vh 19vh;
 		grid-template-areas: "nav" "main" "aside" "footer";
 	}
 	
@@ -835,7 +835,7 @@ fieldset h2 {
 	
 	#gallerySection {
 	grid-template-columns: 1fr;
-	grid-template-rows: 16vh 92vh 22vh;
+	grid-template-rows: 22vh 92vh 22vh;
 	grid-template-areas: "nav" "main" "footer";
 	} 
 
@@ -875,7 +875,7 @@ fieldset h2 {
 
 	#reportSection {
 		grid-template-columns: 1fr ;
-		grid-template-rows: 16vh 447vh 80vh 17vh;
+		grid-template-rows: 22vh 447vh 80vh 17vh;
 		grid-template-areas: "nav" "main" "aside" "footer";
 	}
 
@@ -924,7 +924,7 @@ fieldset h2 {
 	
 	#aboutUs {
 	grid-template-columns: 1fr;
-	grid-template-rows: 18vh 160vh 100vh 22vh;
+	grid-template-rows: 21vh 160vh 100vh 22vh;
 	grid-template-areas: "nav" "main" "aside" "footer";
 	}
 
@@ -957,7 +957,7 @@ fieldset h2 {
 @media (max-width: 600px) {
 	#gallerySection {
 	grid-template-columns: 1fr ;
-	grid-template-rows: 17vh 75vh 23vh ;
+	grid-template-rows: 20vh 75vh 23vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
 
@@ -987,7 +987,7 @@ fieldset h2 {
   	/* CSS Grid */
   	display: grid;
   	grid-template-columns: 1fr;
-  	grid-template-rows: 18vh 110vh 270vh 70vh 17vh;
+  	grid-template-rows: 23vh 110vh 270vh 70vh 17vh;
   	grid-template-areas: "nav" "main" "main" "aside" "footer" ;
 	}
 }
@@ -1004,7 +1004,7 @@ fieldset h2 {
 @media (max-width: 510px) {
 	#gallerySection {
 	grid-template-columns: 1fr ;
-	grid-template-rows: 17vh 65vh 23vh ;
+	grid-template-rows: 21vh 65vh 23vh ;
 	grid-template-areas: "nav" "main" "footer";
 	}
 }
@@ -1014,7 +1014,7 @@ fieldset h2 {
 	
 		#gallerySection {
 		grid-template-columns: 1fr ;
-		grid-template-rows: 14vh 195vh 21vh;
+		grid-template-rows: 21vh 195vh 21vh;
 		grid-template-areas: "nav" "main" "footer" ;
 		}
 
@@ -1067,7 +1067,7 @@ fieldset h2 {
 	
 	#gallerySection {
 		grid-template-columns: 1fr ;
-		grid-template-rows: 16vh 152vh 22vh;
+		grid-template-rows: 19vh 152vh 22vh;
 		grid-template-areas: "nav" "main" "footer";
 	}
 
