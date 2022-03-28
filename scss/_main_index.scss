@@ -1,0 +1,192 @@
+
+main {
+	grid-area: main;
+	height: 10%;
+}
+
+body {
+	background-image: url(../image/fondo-white.jpg);
+	background-repeat: repeat-y;
+	height: $w-100;
+}
+
+#indexSection {
+	display: $d-grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: 25vh 275vh 25vh;
+	grid-template-areas: "nav" "main" "footer";
+	
+	@media (max-width: 1033px) {
+		display: $d-grid;
+		grid-template-columns: 1fr ;
+		grid-template-rows: 25vh 300vh 25vh ;
+		grid-template-areas: "nav" "main" "footer";
+	}
+
+	@media (max-width: 723px) {
+			display: $d-grid;
+			grid-template-columns: 1fr ;
+			grid-template-rows: 22vh 290vh 22vh ;
+			grid-template-areas: "nav" "main" "footer";
+	}
+
+	@media (max-width: 332px) {
+		display: $d-grid;
+		grid-template-columns: 1fr ;
+		grid-template-rows: 17vh 280vh 22vh ;
+		grid-template-areas: "nav" "main" "footer";
+	}
+	
+	@media (max-width: 328px) {
+		display: $d-grid;
+		grid-template-columns: 1fr ;
+		grid-template-rows: 16vh 280vh 23vh ;
+		grid-template-areas: "nav" "main" "footer";
+	}
+	
+	@media (max-width: 326px) {
+		display: $d-grid;
+		grid-template-columns: 1fr ;
+		grid-template-rows: 21vh 280vh 22vh ;
+		grid-template-areas: "nav" "main" "footer";
+	}
+}
+
+.containerImage {
+	/* Box Model */
+	width: $w-100;
+}
+
+.communityPpt {
+	display: $d-flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 4%;
+
+		@media (max-width: 723px) {
+			justify-content: space-between;
+	   		align-items: center;
+	   		margin: 0 4%;
+	    	flex-direction: column;
+		}		
+   }
+
+
+	.presentationTitle {
+		font:{
+		family: $fontForTitles;
+		size: $textLg;
+		weight: 700;
+		}
+		text-align: center;
+		background: linear-gradient(to top, #555555, #000000);
+		color: $mainColor;
+		margin: 3% 3%;
+		width: 90%;
+		
+		@media (max-width: 326px) {
+			font-weight: 500;
+		}
+		
+		@media(max-width: 303px) {
+			font-size: large;
+		}			
+	}
+
+.presentationParagraph {
+	font:{
+	family: $fontPrimary;
+	weight: 500;
+	size: $textMd;
+	}
+	line-height: 1.7rem;
+	text-align: justify;
+	margin: 3% 3%;
+	}
+
+.month {
+	h3 {
+		font-size: $textMd;
+	}
+}
+
+.scheduleTitle {
+	text-align: center;
+	background: linear-gradient(to top, #555555, #000000);
+	color: $mainColor;
+	font-size: $textLg;
+
+	@media (max-width: 332px) {
+		font-weight: 500;
+	}
+
+	@media (max-width: 286px) {
+		font-size: larger;
+	}
+}
+
+
+.schedule {
+	text-align: center;
+	width: $w-100;
+	margin-top: 30px;
+	display: $d-flex;
+	justify-content: center;
+
+	@include pc {
+		display: $d-flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	@media (max-width: 286px) {
+		margin-right: 20px;
+	}
+
+	.month {
+		@media (max-width: 332px) {
+			margin-right: 20px;
+		}
+	}
+
+	ol{
+		list-style: none;
+		display: $d-grid;
+		grid-template-columns: repeat(7, 1fr);	
+
+		.dayName {
+			background-color: #555555;
+			color: $mainColor;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.firstDay {
+			grid-column-start:5;
+		}
+			.first-day{
+				grid-column-start:5;
+			}
+				.dayOne {
+					grid-column-start: 3;
+				}
+
+					.raceDate {
+						background-color: $secondColor;
+						color: $mainColor;
+						font-weight: bold;
+					}			
+	}
+} 
+
+li { text-align: right; }
+
+.listItem {
+	text-align: initial;
+    list-style: none;
+    padding: 4px;
+    margin: 2px 0px;
+    background: linear-gradient(to top, #555555, #000000);
+    color: white;
+    width: 80%;
+}

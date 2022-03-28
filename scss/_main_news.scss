@@ -1,0 +1,103 @@
+#reportSection {
+	width: $w-100;
+	display: $d-grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 20vh 210vh 120vh 22vh;
+	grid-template-areas: 
+	"nav nav nav nav" 
+	"main main main aside" 
+    "main main main aside" 
+    "footer footer footer footer";
+
+    @include pc {
+    	grid-template-columns: repeat(4,1fr); 
+		grid-template-rows: 20vh 195vh 120vh 22vh;
+		grid-template-areas: 
+		"nav nav nav nav" 
+		"main main main aside" 
+		"main main main aside" 
+		"footer footer footer footer";
+    }
+
+    @media (max-width: 992px) {
+    	grid-template-columns: repeat(4,1fr); 
+		grid-template-rows: 23vh 250vh 265vh 22vh;
+		grid-template-areas: 
+		"nav nav nav nav" 
+		"main main main aside" 
+		"main main main aside" 
+		"footer footer footer footer";
+    }
+
+    @media (max-width: 850px) {
+	  	width: $w-100;
+	  	grid-template-columns: repeat(4,1fr);
+	  	grid-template-rows: 23vh 250vh 250vh 22vh;
+	  	grid-template-areas: 
+	  	"nav nav nav nav" 
+	  	"main main main aside" 
+	  	"main main main aside" 
+	  	"footer footer footer footer";
+    }
+
+    @include ipad {
+    	grid-template-columns: 1fr ;
+		grid-template-rows: 23vh 545vh 55vh 22vh;
+		grid-template-areas: "nav" "main" "aside" "footer";
+    }
+
+    @include ipad-mini {
+    	grid-template-columns: 1fr ;
+		grid-template-rows: 22vh 495vh 50vh 22vh;
+		grid-template-areas: "nav" "main" "aside" "footer";
+    }
+
+    @media (max-width: 580px) {
+    	width: $w-100;
+    	grid-template-columns: 1fr;
+  		grid-template-rows: 23vh 220vh 250vh 50vh 22vh;
+  		grid-template-areas: "nav" "main" "main" "aside" "footer";
+    }
+}
+
+.newsArticle {
+	display: $d-flex;
+	@include ipad-mini {
+		flex-wrap: wrap;
+	}
+
+	.newsItem {
+		img {
+			width: $w-100;
+		}
+	}
+}
+
+
+.carousel-caption {
+	h5 {
+		font-size: $textXs;
+
+		@media (max-width: 465px) {
+			font-size:0.8rem;
+		}
+
+	}	
+
+	p {	
+		color: $mainColor;
+		font-weight: bold;
+		font-size: $textP;
+	}
+}
+
+.newsItem {
+	.newsTitle {
+		font-size: $textXs;
+	}
+
+
+	p {
+		font-size: $textP;
+	 }
+}

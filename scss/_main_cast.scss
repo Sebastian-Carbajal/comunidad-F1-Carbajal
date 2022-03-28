@@ -1,0 +1,176 @@
+#castSection {
+	display: $d-grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 23vh 665vh 65vh 22vh;
+	grid-template-areas: "nav" "main" "aside" "footer";
+
+	@media (max-width: 1174px) {
+	grid-template-columns: 1fr;
+	grid-template-rows: 23vh 650vh 50vh 22vh;
+	grid-template-areas: "nav" "main" "aside" "footer";
+	}
+
+	@include ipad-mini {
+		grid-template-columns: 1fr;
+		grid-template-rows: 22vh 800vh 30vh 22vh;
+		grid-template-areas: "nav" "main" "aside" "footer";
+	}
+}
+
+.titleWithImage {
+	background: linear-gradient(to top, #555555, #000000);
+	color: $mainColor;
+	box-sizing: border-box;
+	font-size: $textLg;
+}
+
+.mediaContent {
+	display: $d-flex;
+	justify-content: space-evenly;
+	margin-bottom: 3%;	
+
+	iframe {
+		border:{
+			style:ridge;
+			color:#38383F;
+			width:1.5rem 4rem 1.5rem 4rem;
+		}
+	}
+
+}
+
+.tableItem {
+	figure {
+		border: 0.1px $mainColor solid;
+	}
+	figcaption {
+		color: $mainColor;
+		font-weight: 400;
+	}	
+}
+
+
+.table {
+	margin-left: 5px;
+	width: 80%;
+
+	@include ipad-mini {
+		margin-bottom: 10px;
+	}
+
+	@media (max-width: 660px) {
+		width: $w-100;
+	}
+
+	@media (max-width: 600px) {
+		width: 87%;
+	}
+
+	@media (max-width: 455px) {
+		width: 98%;
+	}
+}
+
+.rows {
+	grid-template-columns: repeat(5, 1fr);
+	justify-items: center;
+	grid-gap: 1px;
+	width: 98%;
+	background-color: rgba(56, 56, 63, 1.0);
+	font-weight: 600;
+	box-sizing: border-box;
+	.tableHeader{
+	padding: 10px;
+	background-color: #38383F;
+	color: $secondColor;
+	display: $d-flex;
+	justify-content: center;
+	}
+}
+
+.body {
+	.rows {
+	padding: 10px;
+	margin: 5px 0;
+	}
+
+	.tableItem {
+		display: $d-flex;
+		justify-content: center;
+		width: 65%;
+		color: $mainColor;
+		font-weight: 600;
+		box-sizing: border-box;
+	}
+}
+
+
+.board {
+	width: 50%;
+
+	@media (max-width: 660px) {
+		width: $w-100;
+	}
+
+	@include samsung {
+		width: 98%;
+	}
+}
+
+.line {
+   display: $d-grid;
+   grid-template-columns: repeat(5, 1fr);
+   align-items: center;
+   justify-content: center;
+   grid-gap: 1px;
+   width: $w-100;
+   background-color: rgba(56, 56, 63, 1.0);
+   color: $mainColor;
+   font-weight: 600;
+   box-sizing: border-box;
+	
+	.boardHeader {
+ 	padding: 10px;
+	background-color: #38383F;
+	color: $secondColor;
+	display: $d-flex;
+	justify-content: center;
+   }
+
+}
+
+.corpus {
+	.line {
+		padding: 10px;
+   		margin: 5px 0;
+
+   		@include ipad-mini {
+   			padding: 10px 15px;
+   		}
+	}
+
+	.boardItem {
+	display: $d-flex;
+   justify-content: center;
+   width: 65%;
+   color: $mainColor;
+   font-weight: 600;
+   box-sizing: border-box;
+   }
+}
+
+.tableFlag {
+	width: 40%;
+
+	@include samsung {
+		width: 100%;
+	}
+}
+
+.castContainer {
+	@include ipad-mini {
+		display: $d-flex;
+		flex-flow: column wrap;
+	}
+}
+

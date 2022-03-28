@@ -1,0 +1,133 @@
+#gallerySection {
+	display: $d-grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 17vh 165vh 23vh;
+	grid-template-areas: "nav nav" "main main" "footer footer";
+
+	@include pc-min {
+		grid-template-columns: 1fr;
+		grid-template-rows: 22vh 120vh 22vh;
+		grid-template-areas: "nav" "main" "footer";
+	}
+
+	@media (max-width: 800px) {
+		grid-template-columns: 1fr;
+		grid-template-rows: 22vh 105vh 22vh;
+		grid-template-areas: "nav" "main" "footer";
+	}
+
+	@include samsung {
+		grid-template-columns: 1fr ;
+		grid-template-rows: 20vh 85vh 23vh ;
+		grid-template-areas: "nav" "main" "footer";
+	}
+
+	@media (max-width: 510px) {
+		grid-template-columns: 1fr ;
+		grid-template-rows: 21vh 75vh 23vh ;
+		grid-template-areas: "nav" "main" "footer";
+	}
+
+	@media (max-width: 470px) {
+		grid-template-columns: 1fr ;
+		grid-template-rows: 21vh 205vh 21vh;
+		grid-template-areas: "nav" "main" "footer";
+	}
+
+	@include galaxy {
+		grid-template-columns: 1fr ;
+		grid-template-rows: 19vh 165vh 22vh;
+		grid-template-areas: "nav" "main" "footer";
+	}
+}
+
+.galleryTitle {
+	font:{
+		family: $fontForTitles;
+		size: $textLg;
+		weight: 700;	
+		}			
+	background: linear-gradient(to top, #555555, #000000);
+	color: $mainColor;
+	text-align: center;
+
+	@include samsung {
+			margin: 1em auto;
+			font-weight: 500;
+			color: $mainColor;
+		}
+}
+	
+	.gallerySubtitle{
+		font-size: $textMd;
+		font-weight: 700;
+		text-align: center;
+		background:linear-gradient(to top, #555555, #000000);
+		color: $mainColor;
+
+		@include samsung  {
+			font-size: 1.1rem;
+		}
+
+		.link {
+			text-decoration: none;
+			color: $secondColor;
+			&:hover {
+				color:$secondColor;
+				background-color:$mainColor;
+			}
+		}
+
+	}
+
+
+.galleryContainer {
+	display: $d-grid;
+	grid-template-columns:repeat(4, 5fr);
+	grid-template-areas:repeat(4, 5fr);
+	justify-items: center;
+	width: 90%;
+	margin: 1.5em auto;
+	box-sizing: border-box;
+
+	@media (max-width: 470px) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(8, 1fr);
+		grid-template-areas: "box1 box2" "box3 box4" "box5 box6" 
+		"box7 box8" "box9 box10" "box11 box12" 
+		"box13 box14" "box15 box16";
+
+		.box1 { grid-area: box1; }
+		.box2 {grid-area: box2; }
+		.box3 {grid-area: box3; }
+		.box4 {grid-area: box4; }
+		.box5 {grid-area: box5; }
+		.box6 {grid-area: box6; }
+		.box7 {grid-area: box7; }
+		.box8 {grid-area: box8; }
+		.box9 {grid-area: box9; }
+		.box10 {grid-area: box10; }
+		.box11 {grid-area: box11; }
+		.box12 {grid-area: box12; }
+		.box13 {grid-area: box13; }
+		.box14 {grid-area: box14; }
+		.box15 {grid-area: box15; }
+		.box16 {grid-area: box16; }
+	}
+
+	.box {
+		width: $w-100;
+		height: auto;
+		border: solid 0.25em rgba(0, 0, 0, 0.2);
+		text-align: center;
+		box-sizing:border-box;
+		&:hover {
+			transform: scale(1.15);
+		}
+		img {
+			width: $w-100;
+			height: $w-100;
+		}
+	}
+
+}

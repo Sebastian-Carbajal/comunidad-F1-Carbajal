@@ -1,0 +1,49 @@
+.adsSection {
+	.linking {
+		width: $w-100;
+		background-color: #38383F;
+		
+		@media (max-width: 671px) {
+			width: 75%;
+		}
+
+		.linkingPhrase {
+			color: $mainColor;
+			text-transform: uppercase;
+			text-align: center;
+			animation-name: advertisementText;
+			animation-duration: 5s;
+			animation-timing-function: ease;
+			margin: 0;
+
+			
+		}
+}
+	@media (max-width: 671px) {
+		width: 60%;
+	}
+}
+
+.imageAd {
+	width: $w-100;
+
+	@media(max-width: 671px) {
+		width: 75%;
+	}
+}
+
+@keyframes advertisementText {
+
+	from {
+		color: rgba(255, 255, 255, 0.1);
+		text-align: center;
+	}	
+
+	to {
+		color: rgba(255, 255, 255, 1.0);
+		text-align: center;
+	}
+
+}
+
+	
