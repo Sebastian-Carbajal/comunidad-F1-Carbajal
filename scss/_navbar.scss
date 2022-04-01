@@ -1,9 +1,9 @@
 .menu {
-	background-color: $bgDark;
+	background-color: map-get($map: $paleta, $key: 'one');
 	width: 100%;
 	height: auto;
 	padding: 1rem 1rem;
-	border-bottom: solid 1rem #555555;
+	border-bottom: solid 1rem $thirdColor;
 	position: sticky;
 	top: 0;
 	box-sizing: border-box;
@@ -27,7 +27,7 @@
 				flex-wrap: nowrap;
 				justify-content: space-between;
 				align-items: flex-end;
-				background-color: rgba(0, 0, 0, .3);
+				background-color: map-get($map: $paleta, $key: 'two');
 			}
 
 			@media (max-width: 880px) {
@@ -41,11 +41,11 @@
 				.link {
 					text-decoration: none;
 					font-size: 1.05rem;
-					color: #EE0000;
+					color: map-get($map: $paleta, $key: 'eleven');
 					margin-top: 1rem;
 					&:hover {
 						font-weight: 900;
-						background-color: #FFFFFF;
+						background-color: map-get($map: $paleta, $key: 'fourteen');
 					}
 				}
 			}

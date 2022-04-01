@@ -11,15 +11,16 @@ aside {
 
 	.advertisement {
 		h1 {
-			background-color: $secondColor;
-		color: $mainColor;
-		text:{
-			align:center;
-			transform:uppercase;
-		}
-		font-size: large;
-		margin: 0;
-		box-sizing: border-box;
+			background-color: map-get($map: $paleta, $key: 'eleven');
+			color: map-get($map: $paleta, $key: 'fourteen');
+			font-size: large;
+			text:{
+				align:center;
+				transform:uppercase;
+			}
+			
+			margin: 0;
+			box-sizing: border-box;
 			@media (max-width: 992px) {
 				font-size: medium;
 			}

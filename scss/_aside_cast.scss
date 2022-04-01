@@ -16,9 +16,8 @@ aside {
 
 		}
 		h1 {
-			background-color: #38383F;
-			color: $mainColor;
-			background-color: rgba(56, 56, 63, 0.6);
+			color: map-get($map: $paleta, $key: 'fourteen');
+			background-color: map-get($map: $paleta, $key: 'six');
 			text-align: center;
 			text-transform: uppercase;
 			width: 60%;

@@ -1,14 +1,14 @@
 .adsSection {
 	.linking {
 		width: $w-100;
-		background-color: #38383F;
+		background-color: map-get($map: $paleta, $key: 'four');
 		
 		@media (max-width: 671px) {
 			width: 75%;
 		}
 
 		.linkingPhrase {
-			color: $mainColor;
+			color: map-get($map: $paleta, $key: 'fourteen');
 			text-transform: uppercase;
 			text-align: center;
 			animation-name: advertisementText;
@@ -35,12 +35,12 @@
 @keyframes advertisementText {
 
 	from {
-		color: rgba(255, 255, 255, 0.1);
+		color: map-get($map: $paleta, $key: 'nine');
 		text-align: center;
 	}	
 
 	to {
-		color: rgba(255, 255, 255, 1.0);
+		color: map-get($map: $paleta, $key: 'fifteen');
 		text-align: center;
 	}
 

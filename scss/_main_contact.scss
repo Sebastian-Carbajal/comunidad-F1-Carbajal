@@ -1,13 +1,8 @@
 #aboutUs {
-	display: $d-grid;
-	grid-template-columns: 2fr 0.5fr;
-	grid-template-rows: 22vh 200vh 23vh;
-	grid-template-areas: "nav nav" "main aside" "footer footer";
+	@include grid (2fr 0.5fr, 22vh 200vh 23vh, "nav nav" "main aside" "footer footer"); 
 
 	@include pc-min {
-		grid-template-columns: 2fr 0.5fr;
-		grid-template-rows: 22vh 240vh 23vh;
-		grid-template-areas: "nav nav" "main aside" "footer footer";
+		@include grid (2fr 0.5fr, 22vh 240vh 23vh, "nav nav" "main aside" "footer footer");
 	}
 
 	aside {
@@ -17,14 +12,12 @@
 	}
 	
 	@media (max-width: 671px) {
-		grid-template-columns: 1fr;
-		grid-template-rows: 21vh 280vh 90vh 22vh;
-		grid-template-areas: "nav" "main" "aside" "footer";
+		@include grid (1fr, 21vh 280vh 90vh 22vh, "nav" "main" "aside" "footer");
 	}
 }
 
 fieldset {
-	background-color: #38383F;
+	background-color:  map-get($map: $paleta, $key: 'four');
 	margin: 1rem 1rem;
 	width: 95%;
 
@@ -34,18 +27,14 @@ fieldset {
 }
 
 form {
-	display: $d-flex;
-	flex-direction: column;
-	align-items:baseline;
+	@include flex (column,baseline)
 
 	label {
 		margin: 5px 0;
 	}
 
 	input {
-		display: $d-flex;
-		flex-direction: column;
-		align-content:space-around;
+	@include d-flex (column, space-around)
 	}
 }
 
@@ -57,16 +46,16 @@ form {
 }
 
 .genero {
-	color: $mainColor;
-	background: linear-gradient(to bottom, #38383F, #555555);
+	color:  map-get($map: $paleta, $key: 'fourteen');
+	background:  map-get($map: $paleta, $key: 'seven');
 	&:hover {
-		color: $mainColor;
-		background: linear-gradient(to top, #e73827, #f85032); ;
+		color:  map-get($map: $paleta, $key: 'fourteen');
+		background:  map-get($map: $paleta, $key: 'ten'); ;
 	}
 
 	option {
-		background-color: $secondColor;
-		color: $mainColor;
+		background-color:  map-get($map: $paleta, $key: 'eleven');
+		color:  map-get($map: $paleta, $key: 'fourteen');
 	}
 }
 
@@ -85,12 +74,12 @@ fieldset {
 }
 
 .reset {
-	font-weight: bold;
-	color: $secondColor;
-	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 44%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 53%, rgba(0,0,0,1) 57%, rgba(0,0,0,1) 63%, rgba(0,0,0,1) 100%);
+	font-weight: $bold;
+	color:  map-get($map: $paleta, $key: 'eleven');
+	background:  map-get($map: $paleta, $key: 'thirteen');
 	&:hover {
-		background: linear-gradient(to bottom, rgba(238,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(217,0,0,1) 51%, rgba(0,0,0,1) 100%);  
-		color: $mainColor;
+		background: map-get($map: $paleta, $key: 'twelve');  
+		color:  map-get($map: $paleta, $key: 'fourteen');
 	}
 }
 
@@ -100,42 +89,40 @@ fieldset {
 
 fieldset {
 	legend {
-		color: #FFFFFF;
-		background-color: #38383F;
-		font-weight: bold;
+		color: $mainColor;
+		background-color:  map-get($map: $paleta, $key: 'four');
+		font-weight: $bold;
 	}
 	
 	form {
 		label {
-			color: $mainColor;
-			display: $d-flex;
-			flex-direction: column;
-			align-items: baseline;
+			color:  map-get($map: $paleta, $key: 'fourteen');
+			@include flex (column,baseline)	
 		}
 		div {
-			color: $mainColor;
+			color:  map-get($map: $paleta, $key: 'fourteen');
 			display: $d-flex;
 		}
 	}
 
 	h2 { 
-		color: $mainColor;
+		color:  map-get($map: $paleta, $key: 'fourteen');
 		font-size: $textLg; 
 	}	
 }
 
 
 #piloto {
-	color: $mainColor;
-	background: linear-gradient(to bottom, #38383F, #555555);
+	color:  map-get($map: $paleta, $key: 'fourteen');
+	background:  map-get($map: $paleta, $key: 'seven');
 	&:hover {
-		color: $mainColor;
-		background: linear-gradient(to top, #e73827, #f85032);
+		color:  map-get($map: $paleta, $key: 'fourteen');
+		background: map-get($map: $paleta, $key: 'ten');
 	}
 
 	option {
-		background-color: $secondColor;
-		color: $mainColor;
+		background-color:  map-get($map: $paleta, $key: 'eleven');
+		color:  map-get($map: $paleta, $key: 'fourteen');
 	}
 }
 
@@ -145,12 +132,10 @@ fieldset {
 	justify-content: space-evenly;
 
 	@media (max-width: 1000px) {
-		display: $d-flex;
-		flex-direction: column;
-		align-items: baseline;
+		@include flex (column,baseline);
 	}
 
 	label {
-		color: $mainColor;
+		color: map-get($map: $paleta, $key: 'fourteen');
 	}
 }

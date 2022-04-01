@@ -11,44 +11,26 @@ body {
 }
 
 #indexSection {
-	display: $d-grid;
-	grid-template-columns: 1fr ;
-	grid-template-rows: 25vh 275vh 25vh;
-	grid-template-areas: "nav" "main" "footer";
+	@include grid (1fr,25vh 275vh 25vh, "nav" "main" "footer");
 	
 	@media (max-width: 1033px) {
-		display: $d-grid;
-		grid-template-columns: 1fr ;
-		grid-template-rows: 25vh 300vh 25vh ;
-		grid-template-areas: "nav" "main" "footer";
+		@include grid (1fr,25vh 300vh 25vh, "nav" "main" "footer");
 	}
 
 	@media (max-width: 723px) {
-			display: $d-grid;
-			grid-template-columns: 1fr ;
-			grid-template-rows: 22vh 290vh 22vh ;
-			grid-template-areas: "nav" "main" "footer";
+		@include grid (1fr,25vh 290vh 25vh, "nav" "main" "footer");
 	}
 
 	@media (max-width: 332px) {
-		display: $d-grid;
-		grid-template-columns: 1fr ;
-		grid-template-rows: 17vh 280vh 22vh ;
-		grid-template-areas: "nav" "main" "footer";
+		@include grid (1fr,17vh 280vh 22vh, "nav" "main" "footer");
 	}
 	
 	@media (max-width: 328px) {
-		display: $d-grid;
-		grid-template-columns: 1fr ;
-		grid-template-rows: 16vh 280vh 23vh ;
-		grid-template-areas: "nav" "main" "footer";
+		@include grid (1fr,17vh 280vh 22vh, "nav" "main" "footer");
 	}
 	
 	@media (max-width: 326px) {
-		display: $d-grid;
-		grid-template-columns: 1fr ;
-		grid-template-rows: 21vh 280vh 22vh ;
-		grid-template-areas: "nav" "main" "footer";
+		@include grid (1fr,21vh 280vh 22vh, "nav" "main" "footer");
 	}
 }
 
@@ -64,23 +46,19 @@ body {
 	margin: 0 4%;
 
 		@media (max-width: 723px) {
+			flex-direction: column;
+			display: $d-flex;
 			justify-content: space-between;
-	   		align-items: center;
-	   		margin: 0 4%;
-	    	flex-direction: column;
+			align-items: center;
+			margin: 0 4%;  	
 		}		
    }
 
 
 	.presentationTitle {
-		font:{
-		family: $fontForTitles;
-		size: $textLg;
-		weight: 700;
-		}
-		text-align: center;
-		background: linear-gradient(to top, #555555, #000000);
-		color: $mainColor;
+		@include text ($fontForTitles,$textLg,700,center)
+		background: map-get($map:$paleta, $key:'three');
+		color: map-get($map: $paleta, $key: 'fourteen');
 		margin: 3% 3%;
 		width: 90%;
 		
@@ -94,13 +72,8 @@ body {
 	}
 
 .presentationParagraph {
-	font:{
-	family: $fontPrimary;
-	weight: 500;
-	size: $textMd;
-	}
+	@include text ($fontPrimary,$textMd,500,justify);
 	line-height: 1.7rem;
-	text-align: justify;
 	margin: 3% 3%;
 	}
 
@@ -112,9 +85,9 @@ body {
 
 .scheduleTitle {
 	text-align: center;
-	background: linear-gradient(to top, #555555, #000000);
-	color: $mainColor;
 	font-size: $textLg;
+	background: map-get($map: $paleta, $key: 'three');
+	color: map-get($map: $paleta, $key: 'fourteen');
 
 	@media (max-width: 332px) {
 		font-weight: 500;
@@ -127,16 +100,14 @@ body {
 
 
 .schedule {
-	text-align: center;
 	width: $w-100;
 	margin-top: 30px;
+	text-align: center;
 	display: $d-flex;
 	justify-content: center;
 
 	@include pc {
-		display: $d-flex;
-		flex-direction: column;
-		align-items: center;
+		@include flex (column,center);
 	}
 
 	@media (max-width: 286px) {
@@ -155,9 +126,9 @@ body {
 		grid-template-columns: repeat(7, 1fr);	
 
 		.dayName {
-			background-color: #555555;
-			color: $mainColor;
-			font-weight: bold;
+			background-color: map-get($map: $paleta, $key: 'eight');
+			color: map-get($map: $paleta, $key: 'fourteen');
+			font-weight: $bold;
 			text-align: center;
 		}
 
@@ -172,9 +143,9 @@ body {
 				}
 
 					.raceDate {
-						background-color: $secondColor;
-						color: $mainColor;
-						font-weight: bold;
+						background-color: map-get($map: $paleta, $key: 'eleven');
+						color: map-get($map: $paleta, $key: 'fourteen');
+						font-weight: $bold;
 					}			
 	}
 } 
@@ -186,7 +157,8 @@ li { text-align: right; }
     list-style: none;
     padding: 4px;
     margin: 2px 0px;
-    background: linear-gradient(to top, #555555, #000000);
-    color: white;
+    background: map-get($map: $paleta, $key: 'three');
+    color: map-get($map: $paleta, $key: 'fourteen');
     width: 80%;
 }
+

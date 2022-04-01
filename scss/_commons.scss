@@ -1,0 +1,81 @@
+
+//fuentes
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
+
+$fontPrimary: 'Cabin', sans-serif; 
+$fontForTitles: sans-serif;
+
+
+//color 
+$mainColor: #FFFFFF;
+$secondColor: #EE0000;
+$thirdColor: #555555;
+$fourthColor: #38383F;
+$fifthColor: #000000;
+
+//display 
+$d-flex: flex;
+$d-grid: grid;
+
+//tamaño 
+$w-100: 100%;
+
+// tamaño textos 
+$textLg: 1.8rem;
+$textMd: 1.4rem;
+$textXs: 1.2rem;
+$textP: 1.05rem;
+
+//peso textos 
+$bold: bold;
+
+
+// map	
+
+$paleta : (
+	'one': rgba(0,0,0,.7),
+	'two': rgba(0,0,0,.3),
+	'three': linear-gradient(to top, #555555, #000000),
+	'four': #38383F,
+	'five': rgba(56,56,63,1.0),
+	'six':  rgba(56,56,63,0.6),
+	'seven': linear-gradient(to bottom, #38383F, #555555),
+	'eight': #555555,
+	'nine': rgba(255, 255, 255, 0.1),
+	'ten':  linear-gradient(to top, #e73827, #f85032),
+	'eleven': #EE0000,
+	'twelve': linear-gradient(to bottom, rgba(238,0,0,1) 0%, rgba(246,41,12,1) 0%, rgba(246,41,12,1) 0%, rgba(0,0,0,1) 0%, rgba(217,0,0,1) 51%, rgba(0,0,0,1) 100%),
+	'thirteen': linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 44%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 53%, rgba(0,0,0,1) 57%, rgba(0,0,0,1) 63%, rgba(0,0,0,1) 100%) ,
+	'fourteen': #FFFFFF,
+	'fifteen': rgba(255, 255, 255, 1.0),  
+	);
+
+
+// mixins
+
+@mixin flex ($direction,$align) {
+	display: $d-flex;
+	flex-direction: $direction;
+	align-items: $align;
+} 
+
+@mixin d-flex ($direction,$content) {
+	display: $d-flex;
+	flex-direction: $direction;
+	align-content:$content;
+}
+
+@mixin text ($family,$fsize,$fw,$alignTxt) {
+	font-famly: $family;
+	font-size: $fsize;
+	font-weight: $fw;
+	text-align: $alignTxt;
+}
+
+@mixin grid ($columns,$rows,$areas) {
+	display: $d-grid;
+	grid-template-columns: $columns;
+	grid-template-rows: $rows;
+	grid-template-areas: $areas;
+}

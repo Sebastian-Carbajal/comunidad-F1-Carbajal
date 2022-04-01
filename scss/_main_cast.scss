@@ -1,25 +1,18 @@
 #castSection {
-	display: $d-grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 23vh 665vh 65vh 22vh;
-	grid-template-areas: "nav" "main" "aside" "footer";
+	@include grid (1fr,23vh 715vh 70vh 22vh,"nav" "main" "aside" "footer");
 
 	@media (max-width: 1174px) {
-	grid-template-columns: 1fr;
-	grid-template-rows: 23vh 650vh 50vh 22vh;
-	grid-template-areas: "nav" "main" "aside" "footer";
+		@include grid (1fr,23vh 760vh 50vh 22vh,"nav" "main" "aside" "footer");
 	}
 
 	@include ipad-mini {
-		grid-template-columns: 1fr;
-		grid-template-rows: 22vh 800vh 30vh 22vh;
-		grid-template-areas: "nav" "main" "aside" "footer";
+		@include grid (1fr,22vh 910vh 30vh 22vh,"nav" "main" "aside" "footer");	
 	}
 }
 
 .titleWithImage {
-	background: linear-gradient(to top, #555555, #000000);
-	color: $mainColor;
+	background: map-get($map: $paleta, $key: 'three');
+	color: map-get($map: $paleta, $key: 'fourteen');
 	box-sizing: border-box;
 	font-size: $textLg;
 }
@@ -32,11 +25,18 @@
 	iframe {
 		border:{
 			style:ridge;
-			color:#38383F;
+			color:map-get($map: $paleta, $key: 'four');
 			width:1.5rem 4rem 1.5rem 4rem;
 		}
 	}
 
+}
+
+.castContainer {
+	@include ipad-mini {
+		display: $d-flex;
+		flex-flow: column wrap;
+	}
 }
 
 .tableItem {
@@ -44,7 +44,7 @@
 		border: 0.1px $mainColor solid;
 	}
 	figcaption {
-		color: $mainColor;
+		color: map-get($map: $paleta, $key: 'fourteen');
 		font-weight: 400;
 	}	
 }
@@ -75,14 +75,15 @@
 	grid-template-columns: repeat(5, 1fr);
 	justify-items: center;
 	grid-gap: 1px;
-	width: 98%;
-	background-color: rgba(56, 56, 63, 1.0);
+	background-color: map-get($map: $paleta, $key: 'five');
 	font-weight: 600;
 	box-sizing: border-box;
+	width: 98%;
+	
 	.tableHeader{
 	padding: 10px;
-	background-color: #38383F;
-	color: $secondColor;
+	background-color: map-get($map: $paleta, $key: 'four');
+	color: map-get($map: $paleta, $key: 'eleven');
 	display: $d-flex;
 	justify-content: center;
 	}
@@ -98,7 +99,7 @@
 		display: $d-flex;
 		justify-content: center;
 		width: 65%;
-		color: $mainColor;
+		color: map-get($map: $paleta, $key: 'fourteen');
 		font-weight: 600;
 		box-sizing: border-box;
 	}
@@ -118,31 +119,19 @@
 }
 
 .line {
-   display: $d-grid;
-   grid-template-columns: repeat(5, 1fr);
-   align-items: center;
-   justify-content: center;
-   grid-gap: 1px;
-   width: $w-100;
-   background-color: rgba(56, 56, 63, 1.0);
-   color: $mainColor;
-   font-weight: 600;
-   box-sizing: border-box;
-	
-	.boardHeader {
- 	padding: 10px;
-	background-color: #38383F;
-	color: $secondColor;
-	display: $d-flex;
-	justify-content: center;
-   }
+	@extend .rows;
+	width: $w-100;
 
+	.boardHeader {
+ 	@extend .tableHeader;
+	}
 }
+
 
 .corpus {
 	.line {
 		padding: 10px;
-   		margin: 5px 0;
+   	margin: 5px 0;
 
    		@include ipad-mini {
    			padding: 10px 15px;
@@ -150,27 +139,17 @@
 	}
 
 	.boardItem {
-	display: $d-flex;
-   justify-content: center;
-   width: 65%;
-   color: $mainColor;
-   font-weight: 600;
-   box-sizing: border-box;
+	@extend .tableItem;
    }
 }
 
 .tableFlag {
 	width: 40%;
-
+	
 	@include samsung {
-		width: 100%;
+		width: 80%;
 	}
 }
+	
 
-.castContainer {
-	@include ipad-mini {
-		display: $d-flex;
-		flex-flow: column wrap;
-	}
-}
 
