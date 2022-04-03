@@ -1,12 +1,24 @@
 #castSection {
-	@include grid (1fr,23vh 715vh 70vh 22vh,"nav" "main" "aside" "footer");
+	@include grid (1fr,23vh 670vh 60vh 22vh,"nav" "main" "aside" "footer");
 
 	@media (max-width: 1174px) {
-		@include grid (1fr,23vh 760vh 50vh 22vh,"nav" "main" "aside" "footer");
+		@include grid (1fr,23vh 645vh 50vh 22vh,"nav" "main" "aside" "footer");
+	}
+
+	@include desktop {
+		@include grid (1fr,22vh 855vh 50vh 22vh,"nav" "main" "aside" "footer");	
+	}
+
+	@include pc-min {
+		@include grid (1fr,22vh 800vh 45vh 22vh,"nav" "main" "aside" "footer");
 	}
 
 	@include ipad-mini {
-		@include grid (1fr,22vh 910vh 30vh 22vh,"nav" "main" "aside" "footer");	
+		@include grid (1fr,22vh 760vh 25vh 22vh,"nav" "main" "aside" "footer");
+	}
+
+	@media (max-width: 480px) {
+		@include grid (1fr,22vh 770vh 25vh 22vh,"nav" "main" "aside" "footer");
 	}
 }
 
@@ -33,7 +45,7 @@
 }
 
 .castContainer {
-	@include ipad-mini {
+	@include desktop {
 		display: $d-flex;
 		flex-flow: column wrap;
 	}
@@ -54,20 +66,21 @@
 	margin-left: 5px;
 	width: 80%;
 
-	@include ipad-mini {
+	@include desktop {
 		margin-bottom: 10px;
+		width: $w-100;
 	}
 
 	@media (max-width: 660px) {
 		width: $w-100;
 	}
 
-	@media (max-width: 600px) {
-		width: 87%;
+	@include samsung {
+		width: $w-100;
 	}
 
 	@media (max-width: 455px) {
-		width: 98%;
+		width: $w-100;
 	}
 }
 
@@ -98,16 +111,25 @@
 	.tableItem {
 		display: $d-flex;
 		justify-content: center;
-		width: 65%;
+		width: 80%;
 		color: map-get($map: $paleta, $key: 'fourteen');
 		font-weight: 600;
 		box-sizing: border-box;
+
+		@include galaxy {
+			width: $w-100;
+		}
 	}
 }
 
 
 .board {
 	width: 50%;
+
+	@include desktop {
+		width: $w-100;
+		margin: 0 5px
+	}
 
 	@media (max-width: 660px) {
 		width: $w-100;
@@ -131,25 +153,31 @@
 .corpus {
 	.line {
 		padding: 10px;
-   	margin: 5px 0;
+   		margin: 5px 0;
 
-   		@include ipad-mini {
-   			padding: 10px 15px;
+   		@include desktop {
+   			padding: 10px 10px;
    		}
 	}
 
 	.boardItem {
 	@extend .tableItem;
+	display: flex;
+	justify-content: center;
    }
 }
 
-.tableFlag {
-	width: 40%;
-	
-	@include samsung {
-		width: 80%;
+.tableItem {
+	.tableFlag {
+		width: 40%;
 	}
 }
-	
 
+.boardItem {
+	.tableFlag {
+		@media (max-width: 980px) {
+			margin-right: 0.75em;
+		}
+	}
+}
 
