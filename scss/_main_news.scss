@@ -1,3 +1,4 @@
+//Estilo para news
 #reportSection {
 	@include grid (repeat(4, 1fr),20vh 210vh 120vh 22vh,"nav nav nav nav" 
 	"main main main aside" 
@@ -38,6 +39,7 @@
     }
 }
 
+//Estilo para los artículos noticieros 
 .newsArticle {
 	display: $d-flex;
 	@include ipad-mini {
@@ -51,6 +53,7 @@
 	}
 }
 
+//Estilo para carrusel de noticias 
 
 .carousel-caption {
 	h5 {
@@ -68,6 +71,8 @@
 		font-size: $textP;
 	}
 }
+
+//Estilo para artículos noticieros
 
 .newsItem {
 	.newsTitle {

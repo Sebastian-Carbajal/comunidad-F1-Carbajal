@@ -1,3 +1,4 @@
+//Estilos para gallery
 #gallerySection {
 	@include grid (1fr 1fr, 17vh 165vh 23vh, "nav nav" "main main" "footer footer");
 
@@ -25,6 +26,8 @@
 		@include grid (1fr,19vh 165vh 22vh,"nav" "main" "footer");
 	}
 }
+
+// Estilos para textos en gallery 
 
 .galleryTitle {
 		@include text ($fontForTitles,$textLg,700,center);		
@@ -58,6 +61,7 @@
 
 	}
 
+// Estilos para la grilla de imágenes 
 
 .galleryContainer {
 	display: $d-grid;

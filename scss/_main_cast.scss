@@ -1,3 +1,4 @@
+//Estilos para cast
 #castSection {
 	@include grid (1fr,23vh 670vh 60vh 22vh,"nav" "main" "aside" "footer");
 
@@ -22,6 +23,8 @@
 	}
 }
 
+// Estilos para video introductorio de los pilotos de la Fórmula 1 
+
 .titleWithImage {
 	background: map-get($map: $paleta, $key: 'three');
 	color: map-get($map: $paleta, $key: 'fourteen');
@@ -44,12 +47,15 @@
 
 }
 
+//Estilo para las tablas 
 .castContainer {
 	@include desktop {
 		display: $d-flex;
 		flex-flow: column wrap;
 	}
 }
+
+// Estilos para las tablas, las filas y su ítems 
 
 .tableItem {
 	figure {

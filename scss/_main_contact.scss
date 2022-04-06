@@ -1,3 +1,4 @@
+//Estilo para contact
 #aboutUs {
 	@include grid (2fr 0.5fr, 22vh 200vh 23vh, "nav nav" "main aside" "footer footer"); 
 
@@ -15,6 +16,8 @@
 		@include grid (1fr, 21vh 280vh 90vh 22vh, "nav" "main" "aside" "footer");
 	}
 }
+
+//Estilo para ambos formularios 
 
 fieldset {
 	background-color:  map-get($map: $paleta, $key: 'four');
@@ -38,6 +41,7 @@ form {
 	}
 }
 
+// Estilos para el primer formulario
 
 .form-control {
 	@media (max-width: 290px) {
@@ -126,6 +130,7 @@ fieldset {
 	}
 }
 
+// Estilos para el formulario sobre la Fórmula 1 
 
 .legendsQuiz {
 	display: $d-flex;

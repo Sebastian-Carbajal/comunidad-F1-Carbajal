@@ -1,4 +1,4 @@
-
+//Estilos para index 
 main {
 	grid-area: main;
 	height: 10%;
@@ -38,6 +38,8 @@ body {
 	width: $w-100;
 }
 
+//Estilos para textos de presentación 
+
 .communityPpt {
 	display: $d-flex;
 	justify-content: space-between;
@@ -75,6 +77,8 @@ body {
 	line-height: 1.7rem;
 	margin: 3% 3%;
 	}
+
+//Estilos para calendario
 
 .month {
 	h3 {

@@ -1,4 +1,3 @@
-
 //fuentes
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
@@ -6,20 +5,12 @@
 $fontPrimary: 'Cabin', sans-serif; 
 $fontForTitles: sans-serif;
 
-
-//color 
-$mainColor: #FFFFFF;
-$secondColor: #EE0000;
-$thirdColor: #555555;
-$fourthColor: #38383F;
-$fifthColor: #000000;
+//tamaño 
+$w-100: 100%;
 
 //display 
 $d-flex: flex;
 $d-grid: grid;
-
-//tamaño 
-$w-100: 100%;
 
 // tamaño textos 
 $textLg: 1.8rem;
@@ -30,6 +21,12 @@ $textP: 1.05rem;
 //peso textos 
 $bold: bold;
 
+//colores 
+$mainColor: #FFFFFF;
+$secondColor: #EE0000;
+$thirdColor: #555555;
+$fourthColor: #38383F;
+$fifthColor: #000000;
 
 // map	
 
