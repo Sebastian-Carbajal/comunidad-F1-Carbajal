@@ -67,7 +67,7 @@ $paleta : (
 }
 
 @mixin text ($family,$fsize,$fw,$alignTxt) {
-	font-famly: $family;
+	font-family: $family;
 	font-size: $fsize;
 	font-weight: $fw;
 	text-align: $alignTxt;

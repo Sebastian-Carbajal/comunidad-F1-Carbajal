@@ -18,7 +18,7 @@
 	}
 
 	@media (max-width: 480px) {
-		@include grid (1fr,22vh 770vh 25vh 22vh,"nav" "main" "aside" "footer");
+		@include grid (1fr,22vh 780vh 25vh 22vh,"nav" "main" "aside" "footer");
 	}
 }
 
@@ -35,7 +35,7 @@
 	margin-bottom: 3%;	
 
 	iframe {
-		border:{
+		border{
 			style:ridge;
 			color:map-get($map: $paleta, $key: 'four');
 			width:1.5rem 4rem 1.5rem 4rem;

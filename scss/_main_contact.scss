@@ -27,14 +27,14 @@ fieldset {
 }
 
 form {
-	@include flex (column,baseline)
+	@include flex (column,baseline);
 
 	label {
 		margin: 5px 0;
 	}
 
 	input {
-	@include d-flex (column, space-around)
+	@include d-flex (column, space-around);
 	}
 }
 
@@ -97,7 +97,7 @@ fieldset {
 	form {
 		label {
 			color:  map-get($map: $paleta, $key: 'fourteen');
-			@include flex (column,baseline)	
+			@include flex (column,baseline);	
 		}
 		div {
 			color:  map-get($map: $paleta, $key: 'fourteen');
