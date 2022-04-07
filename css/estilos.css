@@ -5,8 +5,6 @@
   height: auto;
   padding: 1rem 1rem;
   border-bottom: solid 1rem #555555;
-  position: sticky;
-  top: 0;
   box-sizing: border-box;
   grid-area: nav; }
   .menu .navbar {
@@ -382,14 +380,16 @@ li {
 
 .carousel-caption p {
   color: #FFFFFF;
-  font-weight: bold;
-  font-size: 1.05rem; }
+  font-size: 1.05rem;
+  font-family: "Cabin", sans-serif; }
 
 .newsItem .newsTitle {
-  font-size: 1.2rem; }
+  font-size: 1.8rem;
+  font-family: sans-serif; }
 
 .newsItem p {
-  font-size: 1.05rem; }
+  font-size: 1.05rem;
+  line-height: 1.6rem; }
 
 #gallerySection {
   display: grid;
@@ -466,7 +466,7 @@ li {
 .galleryContainer {
   display: grid;
   grid-template-columns: repeat(4, 5fr);
-  grid-template-areas: repeat(4, 5fr);
+  grid-template-rows: repeat(4, 5fr);
   justify-items: center;
   width: 90%;
   margin: 1.5em auto;
@@ -567,10 +567,10 @@ li {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3%; }
-  .mediaContent iframe border {
-    style: ridge;
-    color: #38383F;
-    width: 1.5rem 4rem 1.5rem 4rem; }
+  .mediaContent iframe {
+    border-style: ridge;
+    border-color: #38383F;
+    border-width: 1.5rem 4rem 1.5rem 4rem; }
 
 @media (max-width: 1120px) {
   .castContainer {
@@ -729,7 +729,7 @@ fieldset form textarea {
 .reset, .submit {
   font-weight: bold;
   color: #EE0000;
-  background: linear-gradient(0deg, black 0%, black 35%, black 44%, white 50%, white 53%, white 53%, black 57%, black 63%, black 100%); }
+  background: linear-gradient(to top, #555555, #000000); }
   .reset:hover, .submit:hover {
     background: linear-gradient(to bottom, #ee0000 0%, #f6290c 0%, #f6290c 0%, black 0%, #d90000 51%, black 100%);
     color: #FFFFFF; }

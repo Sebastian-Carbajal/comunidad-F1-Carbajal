@@ -38,11 +38,9 @@
 	margin-bottom: 3%;	
 
 	iframe {
-		border{
-			style:ridge;
-			color:map-get($map: $paleta, $key: 'four');
-			width:1.5rem 4rem 1.5rem 4rem;
-		}
+			border-style:ridge;
+			border-color:map-get($map: $paleta, $key: 'four');
+			border-width:1.5rem 4rem 1.5rem 4rem;
 	}
 
 }

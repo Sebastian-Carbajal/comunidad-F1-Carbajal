@@ -67,8 +67,8 @@
 
 	p {	
 		color: map-get($map: $paleta, $key: 'fourteen');
-		font-weight: $bold;
 		font-size: $textP;
+		font-family: "Cabin", sans-serif;
 	}
 }
 
@@ -76,11 +76,14 @@
 
 .newsItem {
 	.newsTitle {
-		font-size: $textXs;
+		font-size: $textLg;
+		font-family: sans-serif;
 	}
 
 
 	p {
 		font-size: $textP;
+		line-height: 1.6rem;
 	 }
 }
+

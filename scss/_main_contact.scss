@@ -80,7 +80,7 @@ fieldset {
 .reset {
 	font-weight: $bold;
 	color:  map-get($map: $paleta, $key: 'eleven');
-	background:  map-get($map: $paleta, $key: 'thirteen');
+	background:  map-get($map: $paleta, $key: 'three');
 	&:hover {
 		background: map-get($map: $paleta, $key: 'twelve');  
 		color:  map-get($map: $paleta, $key: 'fourteen');
