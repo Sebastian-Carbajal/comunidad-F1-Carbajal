@@ -1,0 +1,68 @@
+.banner {
+	height: 70vh;
+
+	.bannerContainer {
+		background:{
+			image: url(../image/f1-banner.jpg);
+			repeat: no-repeat;
+			size: cover;
+			position: center;
+		}
+		height: 95vh;
+	
+		@media (max-width: 900px){
+			width: 100%;
+		}
+
+	}
+	
+}
+
+.text {
+	background-color: rgba(56, 56, 63, .7);
+	border-radius: 75% 75% 0 0;
+	height: 25vh;
+	@include flex (column,center);
+	justify-content: center;
+
+	@include galaxy {
+		font-size: 0.5rem
+	}
+
+	.mainMessage {
+			text-align: center;
+			background: map-get($map:$paleta, $key: 'seven');
+			color: rgba(255, 255, 255, .8);
+	
+		@include galaxy {
+		font-size: 1.3rem
+	}	
+
+	}
+	
+	.eDescription {
+			text-align: center;
+			background: map-get($map:$paleta, $key: 'seven');
+			color: rgba(255, 255, 255, .8);
+	
+		@include galaxy {
+		font-size: 1rem
+	}	
+
+		button {
+			border-radius: 5px;
+			background: map-get($map:$paleta, $key: 'one');
+
+			.link {
+				text-decoration: none;
+				color: white;
+				&:hover{
+					color: $fifthColor;
+					background: $mainColor;
+				}
+			}
+		}
+
+	}
+
+}

@@ -10,7 +10,7 @@ body {
 	height: $w-100;
 }
 
-#indexSection {
+#body {
 	@include grid (1fr,25vh 275vh 25vh, "nav" "main" "footer");
 	
 	@media (max-width: 1033px) {

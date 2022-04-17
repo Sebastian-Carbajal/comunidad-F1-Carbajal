@@ -88,8 +88,13 @@ fieldset {
 }
 
 .submit {
-	@extend .reset
+	@extend .reset	
 }
+
+a.enlace {
+		text-decoration: none;
+		color: map-get($map: $paleta, $key: 'eleven');
+	}
 
 fieldset {
 	legend {

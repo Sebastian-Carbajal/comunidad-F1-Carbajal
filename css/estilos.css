@@ -173,6 +173,53 @@ aside .commercial h1 {
     color: white;
     text-align: center; } }
 
+.banner {
+  height: 70vh; }
+  .banner .bannerContainer {
+    background-image: url(../image/f1-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh; }
+    @media (max-width: 900px) {
+      .banner .bannerContainer {
+        width: 100%; } }
+
+.text {
+  background-color: rgba(56, 56, 63, 0.7);
+  border-radius: 75% 75% 0 0;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 350px) {
+    .text {
+      font-size: 0.5rem; } }
+  .text .mainMessage {
+    text-align: center;
+    background: linear-gradient(to bottom, #38383F, #555555);
+    color: rgba(255, 255, 255, 0.8); }
+    @media (max-width: 350px) {
+      .text .mainMessage {
+        font-size: 1.3rem; } }
+  .text .eDescription {
+    text-align: center;
+    background: linear-gradient(to bottom, #38383F, #555555);
+    color: rgba(255, 255, 255, 0.8); }
+    @media (max-width: 350px) {
+      .text .eDescription {
+        font-size: 1rem; } }
+    .text .eDescription button {
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.7); }
+      .text .eDescription button .link {
+        text-decoration: none;
+        color: white; }
+        .text .eDescription button .link:hover {
+          color: #000000;
+          background: #FFFFFF; }
+
 main {
   grid-area: main;
   height: 10%; }
@@ -182,37 +229,37 @@ body {
   background-repeat: repeat-y;
   height: 100%; }
 
-#indexSection {
+#body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 25vh 275vh 25vh;
   grid-template-areas: "nav" "main" "footer"; }
   @media (max-width: 1033px) {
-    #indexSection {
+    #body {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 25vh 300vh 25vh;
       grid-template-areas: "nav" "main" "footer"; } }
   @media (max-width: 723px) {
-    #indexSection {
+    #body {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 25vh 290vh 25vh;
       grid-template-areas: "nav" "main" "footer"; } }
   @media (max-width: 332px) {
-    #indexSection {
+    #body {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 17vh 280vh 22vh;
       grid-template-areas: "nav" "main" "footer"; } }
   @media (max-width: 328px) {
-    #indexSection {
+    #body {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 17vh 280vh 22vh;
       grid-template-areas: "nav" "main" "footer"; } }
   @media (max-width: 326px) {
-    #indexSection {
+    #body {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 21vh 280vh 22vh;
@@ -733,6 +780,10 @@ fieldset form textarea {
   .reset:hover, .submit:hover {
     background: linear-gradient(to bottom, #ee0000 0%, #f6290c 0%, #f6290c 0%, black 0%, #d90000 51%, black 100%);
     color: #FFFFFF; }
+
+a.enlace {
+  text-decoration: none;
+  color: #EE0000; }
 
 fieldset legend {
   color: #FFFFFF;
